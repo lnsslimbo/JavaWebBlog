@@ -9,15 +9,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/DisplayArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/displayArticle.jsp" afterDir="false" />
+    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niu/blog/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/ArticleTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/ArticleTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/common/DbObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/common/DbObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/dao/ArticleTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/entity/ArticleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/ArticleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/ArticleTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/ArticleTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/AddArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/AddArticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/AddArticleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/AddArticleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/DisplayArticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayArticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/DisplayArticleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayArticleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/DisplayUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/DisplayUserInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayUserInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/ManageUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/ModifyUserInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ModifyUserInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/ModifyUserPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ModifyUserPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niu/blog/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addArticle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addArticle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayArticle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayArticle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayArticleType.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayArticleType.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/manageUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manageUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/common/DbObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/filter/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/DisplayUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/DisplayUserInformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/ManageUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/ModifyUserInformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/ModifyUserPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/WEB-INF/classes/com/niu/blog/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/manageUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/manageUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/common/DbObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/filter/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/filter/LoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/DisplayUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/DisplayUserInformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/ManageUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/ModifyUserInformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/ModifyUserPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/niu/blog/servlet/RegisterServlet.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +105,13 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1l7wvnoJOqTcVhmm5r27IuXKpoW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -66,7 +132,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
@@ -75,6 +141,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="DatabaseScript" />
+      </set>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -88,7 +161,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.40" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="blog:war exploded">
           <settings>
@@ -190,6 +263,7 @@
       <workItem from="1606972292576" duration="17807000" />
       <workItem from="1607060549883" duration="2928000" />
       <workItem from="1607088058755" duration="31515000" />
+      <workItem from="1607425037694" duration="2662000" />
     </task>
     <task id="LOCAL-00001" summary="添加了用户字段，相应地更改了用户注册部分">
       <created>1606988931155</created>
@@ -270,7 +344,82 @@
     <MESSAGE value="增加了文章类型查看功能" />
     <MESSAGE value="修复了不同用户文章类型不能重复的bug" />
     <MESSAGE value="增加了添加文章的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了添加文章的功能" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="109" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607424822539">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="109" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1607424822539" />
+    <state x="208" y="28" key="#项目结构" timestamp="1607424983571">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="28" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1607424983571" />
+    <state width="1055" height="313" key="GridCell.Tab.0.bottom" timestamp="1607427626180">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607427626180" />
+    <state width="958" height="175" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607425357471" />
+    <state width="1055" height="313" key="GridCell.Tab.0.center" timestamp="1607427626179">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607427626179" />
+    <state width="958" height="175" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1607425357469" />
+    <state width="1055" height="313" key="GridCell.Tab.0.left" timestamp="1607427626177">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607427626177" />
+    <state width="958" height="175" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1607425357468" />
+    <state width="1055" height="313" key="GridCell.Tab.0.right" timestamp="1607427626179">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607427626179" />
+    <state width="958" height="175" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1607425357470" />
+    <state width="1055" height="313" key="GridCell.Tab.1.bottom" timestamp="1607427626186">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607427626186" />
+    <state width="958" height="175" key="GridCell.Tab.1.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607425357481" />
+    <state width="1055" height="313" key="GridCell.Tab.1.center" timestamp="1607427626185">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607427626185" />
+    <state width="958" height="175" key="GridCell.Tab.1.center/0.25.1440.806@0.25.1440.806" timestamp="1607425357478" />
+    <state width="1055" height="313" key="GridCell.Tab.1.left" timestamp="1607427626184">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607427626184" />
+    <state width="958" height="175" key="GridCell.Tab.1.left/0.25.1440.806@0.25.1440.806" timestamp="1607425357477" />
+    <state width="1055" height="313" key="GridCell.Tab.1.right" timestamp="1607427626185">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607427626185" />
+    <state width="958" height="175" key="GridCell.Tab.1.right/0.25.1440.806@0.25.1440.806" timestamp="1607425357479" />
+    <state width="1055" height="313" key="GridCell.Tab.2.bottom" timestamp="1607427626184">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607427626184" />
+    <state width="958" height="175" key="GridCell.Tab.2.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607425357476" />
+    <state width="1055" height="313" key="GridCell.Tab.2.center" timestamp="1607427626182">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607427626182" />
+    <state width="958" height="175" key="GridCell.Tab.2.center/0.25.1440.806@0.25.1440.806" timestamp="1607425357474" />
+    <state width="1055" height="313" key="GridCell.Tab.2.left" timestamp="1607427626182">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607427626182" />
+    <state width="958" height="175" key="GridCell.Tab.2.left/0.25.1440.806@0.25.1440.806" timestamp="1607425357472" />
+    <state width="1055" height="313" key="GridCell.Tab.2.right" timestamp="1607427626183">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1055" height="313" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607427626183" />
+    <state width="958" height="175" key="GridCell.Tab.2.right/0.25.1440.806@0.25.1440.806" timestamp="1607425357475" />
+    <state x="454" y="205" width="532" height="490" key="find.popup" timestamp="1607427871919">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="454" y="205" width="532" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607427871919" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
