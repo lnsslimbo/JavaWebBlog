@@ -1,15 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
-<%--
-<div id="footer" style="background-color:gray">
-	<hr>
-	<h5 style="text-align:center;color:white">niuniu</h5>
-</div>
---%>
-
 <footer class="bd-footer text-muted">
 	<div class="container-fluid p-3 p-md-5">
-		<p>© 2020 Copyright:niuniu</p>
+		<p>© 2020 Copyright:liunian</p>
 	</div>
 </footer>
 

@@ -24,15 +24,7 @@
 
 <body>
 <%@include file="layout/header.jsp" %>
-<%--
-<form action="login" method="post">
-    用户名：<input type="text" name="userName" value="${userName}"><br>
-    密码：<input type="password" name="password"><br>
-    <span style="color:red">${errorMessage}</span><br>
-    <input type="submit" value="登录">
-    <a href="register">注册</a>
-</form>
---%>
+
 <form action="login" method="POST">
     <h1>用户登录</h1>
     <div class="form-group">

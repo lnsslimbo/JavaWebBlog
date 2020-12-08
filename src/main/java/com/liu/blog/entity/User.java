@@ -10,8 +10,10 @@ public class User {
     private String phone;
     private String email;
     private String weChatId;
-    private String description;
-    private String registrationDate;
+    private String description;//信息
+    private String registrationDate;//注册日期
+    private String role;//用户类型 user
+    private String status;//用户状态 "enable" "disable"
 
     public User() {
     }
@@ -95,4 +97,21 @@ public class User {
     public void setRegistrationDate(String registrationDate) {
         this.registrationDate = registrationDate;
     }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
 }

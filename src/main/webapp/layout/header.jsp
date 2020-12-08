@@ -1,11 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
-<%--
-<div id="header" style="background-color:gray">
-	<h1 style="text-align:center;color:white">个人博客</h1>
-</div>
---%>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="main">博客</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArticleDao {
+//    public ArticalDao(){
+//    }
+
 
 
     public Article addArticle(Article article) {
