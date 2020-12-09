@@ -38,22 +38,39 @@ public class RegisterServlet extends HttpServlet {
 		user.setWeChatId(request.getParameter("weChatId"));
 		user.setDescription(request.getParameter("description"));
 		user.setRegistrationDate(request.getParameter("registrationDate"));
+		user.setRole("role");
+		user.setStatus("status");
 		//2. 检查数据
 		
 		UserService service = new UserService();
 		
-		//2.1 检查用户名密码是否为空，两密码是否相等
+		//用户名不为空
 		if (request.getParameter("userName").equals("")){
 			request.setAttribute("errorMessage", "用户名不能为空！");
 			request.getRequestDispatcher("/register.jsp").forward(request, response);
 			return;
 		}
+		//用户名应在3~12之间
+		if(request.getParameter("userName").length()<3||request.getParameter("userName").length()>12){
+			request.setAttribute("errorMessage","用户名应在3-12之间!");
+			request.getRequestDispatcher("/register.jsp").forward(request, response);
+			return;
+		}
+		//密码不为空
 		if (request.getParameter("password").equals("")){
 			request.setAttribute("user", user);
 			request.setAttribute("errorMessage", "密码不能为空！");
 			request.getRequestDispatcher("/register.jsp").forward(request, response);
 			return;
 		}
+		//密码长度应在8~16之间
+		if(request.getParameter("password").length()<8||request.getParameter("password").length()>16){
+			request.setAttribute("user",user);
+			request.setAttribute("errorMessage","密码应在8-16之间!");
+			request.getRequestDispatcher("/register.jsp").forward(request, response);
+			return;
+		}
+		//密码是否相同
 		if (!request.getParameter("password").equals(request.getParameter("passwordAgain"))){
 			request.setAttribute("user", user);
 			request.setAttribute("errorMessage", "两次输入的密码不相同！");

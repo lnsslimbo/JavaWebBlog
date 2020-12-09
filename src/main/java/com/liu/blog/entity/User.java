@@ -10,7 +10,7 @@ public class User {
     private String phone;
     private String email;
     private String weChatId;
-    private String description;//信息
+    private String description;//描述信息
     private String registrationDate;//注册日期
     private String role;//用户类型 user
     private String status;//用户状态 "enable" "disable"

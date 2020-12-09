@@ -3,13 +3,14 @@
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>My JSP 'register.jsp' starting page</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -24,14 +25,6 @@
 <body>
 <%@include file="layout/header.jsp" %>
 <h1>用户注册</h1>
-<%--<form action="register" method="post">--%>
-<%--    用户名：<input type="text" name="userName" value="${user.userName}"><br>--%>
-<%--    密码：<input type="password" name="password"><br>--%>
-<%--    再次输入密码：<input type="password" name="passwordAgain"><br>--%>
-<%--    用户全名：<input type="text" name="fullName" value="${user.fullName}"><br>--%>
-<%--    <span style="color:red">${errorMessage}</span><br>--%>
-<%--    <input type="submit" value="注册">--%>
-<%--</form>--%>
 
 <%--用户的信息至少包括，用户的登录名、密码、用户的姓名、性别、出生日期、手机、Email、微信号、描述信息、注册日期等。--%>
 <form action="register" method="POST">
@@ -81,6 +74,14 @@
     <div class="form-group">
         <label for="description">描述信息</label>
         <input type="text" class="form-control" id="description" name="description" value="${user.description}">
+    </div>
+    <div class="form-group">
+        <label for="role">用户类型</label>
+        <select class="form-control" id="role" name="role">
+            <option>普通用户</option>
+            <option>管理员</option>
+            <option>访客用户</option>
+        </select>
     </div>
     <span style="color:red">${errorMessage}</span><br>
     <button type="submit" class="btn btn-primary">注册</button>

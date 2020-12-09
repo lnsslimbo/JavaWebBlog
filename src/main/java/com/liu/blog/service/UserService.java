@@ -9,36 +9,53 @@ public class UserService {
 
 	public UserService() {
 	}
-	//判断用户是否已经存在
-	public boolean exists(String userName){
-		User user = findByUserName(userName);
-		if (user == null)
-			return false;
-		else
-			return true;
-	}
-	//用户登录
-	public boolean loginVerify(String userName, String password){
+
+	//用户登录检查
+	public String loginVerify(String userName, String password) {
+
+		String msg = "success";
 
 		//1. 根据用户名从dao对象得到用户的实体对象
 		UserDao userDao = new UserDao();
 		User user = userDao.findByUserName(userName);
 
 		//2. 判断密码是否正确
-		if (user.getPassword().equals(password))
-			return true;
-		else
-			return false;
+		if (!user.getPassword().equals(password)) {
+			msg = "用户名或密码错误";
+			return msg;
+		}
+		//判断用户名为空
+		if(userName.equals("")){
+			msg = "用户名不能为空";
+			return msg;
+		}
+
+		if (!exists(userName)){
+			msg = "用户名不存在";
+			return msg;
+		}
+
+		if (!user.getPassword().equals(password)){
+			msg = "用户名或密码错误";
+			return msg;
+		}
+
+		//3. 判断用户是否禁用
+		if (!user.getStatus().equals("启用")){
+			msg = "用户被禁用";
+			return msg;
+		}
+//		//4. 判断用户是否拥有权限
+//		if(!user.getRole().equals(role){
+//			msg = "用户权限不足";
+//			return msg;
+//		}
+			return msg;
 	}
-	//3. 判断用户是否禁用
-	public String checkStatus(String userName){
-		UserDao dao = new UserDao();
-		return dao.checkStatus(userName);
-	}
-	//4. 判断用户是否拥有权限
-	public String checkRole(String userName,String role){
-		UserDao dao = new UserDao();
-		return dao.checkRole(userName,role);
+	//判断用户是否已经存在
+	public boolean exists(String userName){
+		User user = findByUserName(userName);
+		return user != null;
 	}
 	//更改密码
 	public User updateUserPassword(User user) {
@@ -86,24 +103,32 @@ public class UserService {
 		
 		return userDao.findAll();
 	}
-	//检查是否为管理员
-	public String checkManager(String userName){
-		UserDao dao = new UserDao();
-		return dao.checkManager(userName);
-	}
 	//查询所有用户类型
 	public List<User> findAllRole(){
 		UserDao dao = new UserDao();
 		return dao.findAllRole();
 	}
-	//启用用户
-	public User onUser(String userName){
-		UserDao dao = new UserDao();
-		return dao.onUser(userName);
+
+	public void modifyUserStatus(String userName) {
+		UserDao userDao = new UserDao();
+		User user = userDao.findByUserName(userName);
+		String status = user.getStatus();
+		String changedStatus = null;
+		if (status.equals("启用")){
+			changedStatus = "禁用";
+		}else if (status.equals("禁用")){
+			changedStatus = "启用";
+		}
+		userDao.modifyUserStatus(userName,changedStatus);
 	}
-	//禁用用户
-	public User offUser(String userName){
-		UserDao dao = new UserDao();
-		return dao.offUser(userName);
-	}
+//	//启用用户
+//	public User onUser(String userName){
+//		UserDao dao = new UserDao();
+//		return dao.onUser(userName);
+//	}
+//	//禁用用户
+//	public User offUser(String userName){
+//		UserDao dao = new UserDao();
+//		return dao.offUser(userName);
+//	}
 }

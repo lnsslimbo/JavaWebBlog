@@ -410,5 +410,29 @@ public class UserDao {
 
         return user;
     }
+    //更改用户状态
+    public void modifyUserStatus(String userName, String changedStatus) {
+        Connection cn = null;
+        PreparedStatement st = null;
+
+        cn = DbObject.getConnection();
+
+        try {
+            //4.执行sql
+            String sql = "update users set status=? where username=?";
+            st = cn.prepareStatement(sql);
+
+            st.setString(1, changedStatus);
+            st.setString(2, userName);
+
+            int ret = st.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //5.关闭数据库连接
+            DbObject.close(cn, st, null);
+        }
+    }
 }
 
