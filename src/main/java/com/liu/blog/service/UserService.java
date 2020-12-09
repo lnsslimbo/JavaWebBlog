@@ -15,11 +15,11 @@ public class UserService {
 
 		String msg = "success";
 
-		//1. 根据用户名从dao对象得到用户的实体对象
+		//根据用户名从dao对象得到用户的实体对象
 		UserDao userDao = new UserDao();
 		User user = userDao.findByUserName(userName);
 
-		//2. 判断密码是否正确
+		//判断密码是否正确
 		if (!user.getPassword().equals(password)) {
 			msg = "用户名或密码错误";
 			return msg;
@@ -29,23 +29,22 @@ public class UserService {
 			msg = "用户名不能为空";
 			return msg;
 		}
-
+		//判断用户名是否存在
 		if (!exists(userName)){
 			msg = "用户名不存在";
 			return msg;
 		}
-
+		//判断密码是否相等
 		if (!user.getPassword().equals(password)){
 			msg = "用户名或密码错误";
 			return msg;
 		}
-
-		//3. 判断用户是否禁用
+		//判断用户是否禁用
 		if (!user.getStatus().equals("启用")){
-			msg = "用户被禁用";
+			msg = "用户被禁用！";
 			return msg;
 		}
-//		//4. 判断用户是否拥有权限
+//		//判断用户是否拥有权限
 //		if(!user.getRole().equals(role){
 //			msg = "用户权限不足";
 //			return msg;

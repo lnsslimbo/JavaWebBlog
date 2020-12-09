@@ -14,6 +14,7 @@ import com.liu.blog.service.UserService;
 @WebServlet("/DeleteUserServlet")
 public class DeleteUserServlet extends HttpServlet {
 
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

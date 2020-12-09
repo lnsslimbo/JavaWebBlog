@@ -80,7 +80,7 @@
     <div class="form-group">
         <label for="role">用户类型</label>
         <select class="form-control" id="role" name="role">
-            <option>普通用户</option>
+            <option selected>普通用户</option>
             <option>管理员</option>
             <option>访客用户</option>
         </select>

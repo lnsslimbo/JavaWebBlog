@@ -9,16 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="新增了&#10;checkmanager&#10;checkstatus&#10;checkrole&#10;deletebyusername&#10;findallrole&#10;onuser&#10;offuser&#10;功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" afterDir="false" />
+    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="UserDao">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +204,7 @@
       <workItem from="1606972292576" duration="17807000" />
       <workItem from="1607060549883" duration="2928000" />
       <workItem from="1607088058755" duration="31515000" />
-      <workItem from="1607425037694" duration="23915000" />
+      <workItem from="1607425037694" duration="27720000" />
     </task>
     <task id="LOCAL-00001" summary="添加了用户字段，相应地更改了用户注册部分">
       <created>1606988931155</created>
@@ -292,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607489371736</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="增加了删除用户的功能">
+      <created>1607491228973</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607491228973</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +318,8 @@
     <MESSAGE value="新增了&#10;checkmanager&#10;checkstatus&#10;checkrole&#10;deletebyusername&#10;findallrole&#10;onuser&#10;offuser&#10;功能" />
     <MESSAGE value="删除了&#10;&#10;&#10;deletebyusername&#10;findallrole&#10;&#10;功能&#10;重构了userservice和userservlet" />
     <MESSAGE value="删除了&#10;deletebyusername&#10;findallrole&#10;功能&#10;重构了userservice和userservlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除了&#10;deletebyusername&#10;findallrole&#10;功能&#10;重构了userservice和userservlet" />
+    <MESSAGE value="增加了删除用户的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了删除用户的功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607424822539">
@@ -332,70 +338,70 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="28" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1607424983571" />
-    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2" timestamp="1607489371135">
+    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2" timestamp="1607494230370">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607489371135" />
-    <state width="1055" height="228" key="GridCell.Tab.0.bottom" timestamp="1607491058461">
+    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607494230370" />
+    <state width="1055" height="228" key="GridCell.Tab.0.bottom" timestamp="1607495603670">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607491058461" />
-    <state width="1055" height="228" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607490546165" />
-    <state width="1055" height="228" key="GridCell.Tab.0.center" timestamp="1607491058459">
+    <state width="1055" height="228" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607495603670" />
+    <state width="1055" height="228" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607492988639" />
+    <state width="1055" height="228" key="GridCell.Tab.0.center" timestamp="1607495603668">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607491058459" />
-    <state width="1055" height="228" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1607490546162" />
-    <state width="1055" height="228" key="GridCell.Tab.0.left" timestamp="1607491058456">
+    <state width="1055" height="228" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607495603668" />
+    <state width="1055" height="228" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1607492988631" />
+    <state width="1055" height="228" key="GridCell.Tab.0.left" timestamp="1607495603667">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607491058456" />
-    <state width="1055" height="228" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1607490546161" />
-    <state width="1055" height="228" key="GridCell.Tab.0.right" timestamp="1607491058460">
+    <state width="1055" height="228" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607495603667" />
+    <state width="1055" height="228" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1607492988626" />
+    <state width="1055" height="228" key="GridCell.Tab.0.right" timestamp="1607495603669">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607491058460" />
-    <state width="1055" height="228" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1607490546164" />
-    <state width="1055" height="228" key="GridCell.Tab.1.bottom" timestamp="1607491058466">
+    <state width="1055" height="228" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607495603669" />
+    <state width="1055" height="228" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1607492988638" />
+    <state width="1055" height="228" key="GridCell.Tab.1.bottom" timestamp="1607495603678">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607491058466" />
-    <state width="1055" height="228" key="GridCell.Tab.1.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607490545792" />
-    <state width="1055" height="228" key="GridCell.Tab.1.center" timestamp="1607491058464">
+    <state width="1055" height="228" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607495603678" />
+    <state width="1055" height="228" key="GridCell.Tab.1.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607492988657" />
+    <state width="1055" height="228" key="GridCell.Tab.1.center" timestamp="1607495603677">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607491058464" />
-    <state width="1055" height="228" key="GridCell.Tab.1.center/0.25.1440.806@0.25.1440.806" timestamp="1607490545790" />
-    <state width="1055" height="228" key="GridCell.Tab.1.left" timestamp="1607491058464">
+    <state width="1055" height="228" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607495603677" />
+    <state width="1055" height="228" key="GridCell.Tab.1.center/0.25.1440.806@0.25.1440.806" timestamp="1607492988655" />
+    <state width="1055" height="228" key="GridCell.Tab.1.left" timestamp="1607495603676">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607491058464" />
-    <state width="1055" height="228" key="GridCell.Tab.1.left/0.25.1440.806@0.25.1440.806" timestamp="1607490545789" />
-    <state width="1055" height="228" key="GridCell.Tab.1.right" timestamp="1607491058465">
+    <state width="1055" height="228" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607495603676" />
+    <state width="1055" height="228" key="GridCell.Tab.1.left/0.25.1440.806@0.25.1440.806" timestamp="1607492988648" />
+    <state width="1055" height="228" key="GridCell.Tab.1.right" timestamp="1607495603677">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607491058465" />
-    <state width="1055" height="228" key="GridCell.Tab.1.right/0.25.1440.806@0.25.1440.806" timestamp="1607490545791" />
-    <state width="1055" height="228" key="GridCell.Tab.2.bottom" timestamp="1607491058463">
+    <state width="1055" height="228" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607495603677" />
+    <state width="1055" height="228" key="GridCell.Tab.1.right/0.25.1440.806@0.25.1440.806" timestamp="1607492988656" />
+    <state width="1055" height="228" key="GridCell.Tab.2.bottom" timestamp="1607495603675">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607491058463" />
-    <state width="1055" height="228" key="GridCell.Tab.2.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607490545784" />
-    <state width="1055" height="228" key="GridCell.Tab.2.center" timestamp="1607491058462">
+    <state width="1055" height="228" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607495603675" />
+    <state width="1055" height="228" key="GridCell.Tab.2.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607492988647" />
+    <state width="1055" height="228" key="GridCell.Tab.2.center" timestamp="1607495603673">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607491058462" />
-    <state width="1055" height="228" key="GridCell.Tab.2.center/0.25.1440.806@0.25.1440.806" timestamp="1607490545782" />
-    <state width="1055" height="228" key="GridCell.Tab.2.left" timestamp="1607491058461">
+    <state width="1055" height="228" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607495603673" />
+    <state width="1055" height="228" key="GridCell.Tab.2.center/0.25.1440.806@0.25.1440.806" timestamp="1607492988645" />
+    <state width="1055" height="228" key="GridCell.Tab.2.left" timestamp="1607495603672">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607491058461" />
-    <state width="1055" height="228" key="GridCell.Tab.2.left/0.25.1440.806@0.25.1440.806" timestamp="1607490545781" />
-    <state width="1055" height="228" key="GridCell.Tab.2.right" timestamp="1607491058463">
+    <state width="1055" height="228" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607495603672" />
+    <state width="1055" height="228" key="GridCell.Tab.2.left/0.25.1440.806@0.25.1440.806" timestamp="1607492988642" />
+    <state width="1055" height="228" key="GridCell.Tab.2.right" timestamp="1607495603674">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1055" height="228" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607491058463" />
-    <state width="1055" height="228" key="GridCell.Tab.2.right/0.25.1440.806@0.25.1440.806" timestamp="1607490545783" />
+    <state width="1055" height="228" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607495603674" />
+    <state width="1055" height="228" key="GridCell.Tab.2.right/0.25.1440.806@0.25.1440.806" timestamp="1607492988646" />
     <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1607489374720">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -422,7 +428,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java</url>
-          <line>124</line>
+          <line>123</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
