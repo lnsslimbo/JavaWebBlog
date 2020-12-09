@@ -9,13 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="UserDao">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/register.jsp" afterDir="false" />
+    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="姑且完善了user相关内容">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/Article.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607491228973</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="姑且完善了user相关内容">
+      <created>1607503426565</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607503426565</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,17 +319,18 @@
     <MESSAGE value="删除了&#10;&#10;&#10;deletebyusername&#10;findallrole&#10;&#10;功能&#10;重构了userservice和userservlet" />
     <MESSAGE value="删除了&#10;deletebyusername&#10;findallrole&#10;功能&#10;重构了userservice和userservlet" />
     <MESSAGE value="增加了删除用户的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了删除用户的功能" />
+    <MESSAGE value="姑且完善了user相关内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="姑且完善了user相关内容" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="109" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607424822539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="109" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1607424822539" />
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1607430045399">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1607503557050">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1607430045399" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1607503557050" />
     <state x="458" y="201" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1607436369698">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -336,10 +339,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="28" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1607424983571" />
-    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2" timestamp="1607494230370">
+    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2" timestamp="1607503426321">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607494230370" />
+    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607503426321" />
     <state width="1055" height="328" key="GridCell.Tab.0.bottom" timestamp="1607501898369">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -404,10 +407,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="536" y="174" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1607500260306" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1607489374720">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1607503432444">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607489374720" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607503432444" />
     <state x="458" y="202" key="extract.method.dialog" timestamp="1607490302398">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -416,10 +419,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="599" y="212" width="532" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607501183285" />
-    <state x="547" y="220" key="refactoring.ChangeSignatureDialog" timestamp="1607436974185">
+    <state x="547" y="220" key="refactoring.ChangeSignatureDialog" timestamp="1607503562550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="547" y="220" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1607436974185" />
+    <state x="547" y="220" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1607503562550" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1607482030764">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

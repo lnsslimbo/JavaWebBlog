@@ -7,6 +7,9 @@ public class Article {
     private String articleContent;
     private String userName;
 
+    private String publishDate;
+    private String modDate;
+
     public Article() {
     }
 
@@ -49,4 +52,21 @@ public class Article {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+    public String getPublishDate() {
+        return publishDate;
+    }
+
+    public void setPublishDate(String publishDate) {
+        this.publishDate = publishDate;
+    }
+
+    public String getModDate() {
+        return modDate;
+    }
+    
+    public void setModDate(String modDate) {
+        this.modDate = modDate;
+    }
+
 }
