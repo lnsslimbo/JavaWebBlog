@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" import="com.liu.blog.entity.User" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -22,32 +23,35 @@
 </head>
 
 <body>
-<%@include file="layout/header.jsp" %>
-<%
-    List<User> userList = (List<User>) request.getAttribute("userList");
-%>
-<table border="1">
-    <tr>
-        <th></th>
-        <th>用户名</th>
-        <th>全名</th>
-        <th></th>
-    </tr>
-    <%
-        for (int i = 0; i < userList.size(); i++) {
-    %>
-    <tr>
-        <td><input type="checkbox" value="<%=userList.get(i).getUserName()%>" name="userName"></td>
-        <td><%=userList.get(i).getUserName()%>
-        </td>
-        <td><%=userList.get(i).getFullName()%>
-        </td>
-        <td><a href="displayUser?userName=<%=userList.get(i).getUserName()%>">详细</a></td>
-    </tr>
-    <%
-        }
-    %>
-</table>
-<%@include file="layout/footer.jsp" %>
+<div class="container">
+    <%@include file="layout/header.jsp" %>
+    <h1>管理用户</h1>
+    <table class="table table-hover">
+        <tr>
+            <th>用户名</th>
+            <th>姓名</th>
+            <th>角色</th>
+            <th>状态</th>
+            <th>查看用户信息</th>
+            <th>修改用户信息</th>
+            <th>修改用户密码</th>
+            <th>更改用户状态</th>
+        </tr>
+        <c:forEach items="${userList}" var="user">
+            <tr>
+                <td>${user.userName}</td>
+                <td>${user.fullName}</td>
+                <td>${user.role}</td>
+                <td>${user.status}</td>
+                <td><a href="displayUser?userName=${user.userName}">查看</a></td>
+                <td><a href="modifyUserInformation?userName=${user.userName}">修改</a></td>
+                <td><a href="modifyUserPassword?userName=${user.userName}">修改</a></td>
+                <td><a href="modifyUserStatus?userName=${user.userName}">更改</a></td>
+            </tr>
+        </c:forEach>
+
+    </table>
+    <%@include file="layout/footer.jsp" %>
+</div>
 </body>
 </html>
