@@ -12,25 +12,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArticleDao {
-//    public ArticalDao(){
-//    }
-
-
 
     public Article addArticle(Article article) {
-        Connection cn;
+        Connection cn = DbObject.getConnection();
         PreparedStatement st = null;
 
-        cn = DbObject.getConnection();
-
         try {
-            String sql = "insert into article(articleName,userName,articleTypeName,articleContent) values(?,?,?,?)";
+            String sql = "insert into article(articleName,userName,articleTypeName,articleContent,PublishDate,ModDate)" +
+                    " values(?,?,?,?,?,?)";
             st = cn.prepareStatement(sql);
 
             st.setString(1, article.getArticleName());
             st.setString(2, article.getUserName());
             st.setString(3, article.getArticleTypeName());
             st.setString(4, article.getArticleContent());
+            st.setString(5, article.getPublishDate());
+            st.setString(6, article.getModDate());
 
 
             int ret = st.executeUpdate();
@@ -47,11 +44,9 @@ public class ArticleDao {
     public List<Article> findAll() {
         ArrayList<Article> articleList = new ArrayList<>();
 
-        Connection cn = null;
+        Connection cn = DbObject.getConnection();
         PreparedStatement st = null;
         ResultSet rs = null;
-
-        cn = DbObject.getConnection();
         if (cn == null)
             return null;
 
@@ -81,4 +76,5 @@ public class ArticleDao {
 
         return articleList;
     }
+
 }
