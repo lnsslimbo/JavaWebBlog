@@ -107,7 +107,7 @@ public class UserDao {
             //4.执行sql
             //用户的信息至少包括，用户的登录名、密码、用户的姓名、性别、出生日期、手机、Email、微信号、描述信息、注册日期等。
             String sql = "update users set fullname=?,gender=?,birthday=?,phone=?," +
-                    "email=?,weChatId=?,description=?,role=?,status=? where username=?";
+                    "email=?,weChatId=?,description=? where username=?";
             System.out.println(sql);
 
             st = cn.prepareStatement(sql);
@@ -119,9 +119,7 @@ public class UserDao {
             st.setString(5, user.getEmail());
             st.setString(6, user.getWeChatId());
             st.setString(7, user.getDescription());
-            st.setString(8, user.getRole());
-            st.setString(9, user.getStatus());
-            st.setString(10,user.getUserName());
+            st.setString(8,user.getUserName());
 
             System.out.println(st);
             int ret = st.executeUpdate();
@@ -330,88 +328,62 @@ public class UserDao {
         return null;
 
     }
-    //查询所有用户类型
-    public List<User> findAllRole(){
-        List<User> list = new ArrayList<>();
-
+    /*//启用用户
+    public User onUser(String userName){
         Connection cn = DbObject.getConnection();
         PreparedStatement st = null;
-        ResultSet rs = null;
+        User user = null;
 
         try {
-            String sql = "select  DISTINCT role from Users;";
+
+            String sql = "update Users set status = ? where UserName = ?;";
             System.out.println(sql);
 
             st = cn.prepareStatement(sql);
-            rs = st.executeQuery();
-            while(rs.next()){
-                User user = new User();
-                user.setRole(rs.getString("role"));
-                list.add(user);
+            st.setString(1, "启用");
+            st.setString(2, userName);
+
+            int ret = st.executeUpdate();
+            if(ret>0){
+                user = new User();
+                return user;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }finally{
-            DbObject.close(cn, st, rs);
+            DbObject.close(cn, st, null);
         }
-        return list;
+
+        return user;
     }
-//    //启用用户
-//    public User onUser(String userName){
-//        Connection cn = DbObject.getConnection();
-//        PreparedStatement st = null;
-//        User user = null;
-//
-//        try {
-//
-//            String sql = "update Users set status = ? where UserName = ?;";
-//            System.out.println(sql);
-//
-//            st = cn.prepareStatement(sql);
-//            st.setString(1, "启用");
-//            st.setString(2, userName);
-//
-//            int ret = st.executeUpdate();
-//            if(ret>0){
-//                user = new User();
-//                return user;
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }finally{
-//            DbObject.close(cn, st, null);
-//        }
-//
-//        return user;
-//    }
-//    //禁用用户
-//    public User offUser(String userName){
-//        Connection cn = DbObject.getConnection();
-//        PreparedStatement st = null;
-//        User user = null;
-//
-//        try {
-//
-//            String sql = "update Users set status = ? where UserName = ?;";
-//            System.out.println(sql);
-//
-//            st = cn.prepareStatement(sql);
-//            st.setString(1, "禁用");
-//            st.setString(2, userName);
-//
-//            int ret = st.executeUpdate();
-//            if(ret>0){
-//                user = new User();
-//                return user;
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }finally{
-//            DbObject.close(cn, st, null);
-//        }
-//
-//        return user;
-//    }
+    //禁用用户
+    public User offUser(String userName){
+        Connection cn = DbObject.getConnection();
+        PreparedStatement st = null;
+        User user = null;
+
+        try {
+
+            String sql = "update Users set status = ? where UserName = ?;";
+            System.out.println(sql);
+
+            st = cn.prepareStatement(sql);
+            st.setString(1, "禁用");
+            st.setString(2, userName);
+
+            int ret = st.executeUpdate();
+            if(ret>0){
+                user = new User();
+                return user;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally{
+            DbObject.close(cn, st, null);
+        }
+
+        return user;
+    }*/
     //更改用户状态
     public void modifyUserStatus(String userName, String changedStatus) {
         Connection cn = null;

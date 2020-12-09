@@ -102,11 +102,6 @@ public class UserService {
 		
 		return userDao.findAll();
 	}
-	//查询所有用户类型
-	public List<User> findAllRole(){
-		UserDao dao = new UserDao();
-		return dao.findAllRole();
-	}
 
 	public void modifyUserStatus(String userName) {
 		UserDao userDao = new UserDao();

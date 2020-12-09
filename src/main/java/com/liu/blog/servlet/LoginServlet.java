@@ -19,10 +19,6 @@ public class LoginServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		UserService service = new UserService();
-		List<User> list = service.findAllRole();
-		request.setAttribute("list", list);
-
 		request.getRequestDispatcher("/login.jsp").forward(request, response);
 		
 	}
