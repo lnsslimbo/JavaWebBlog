@@ -78,7 +78,6 @@ public class UserDao {
                 user.setBirthday(rs.getString("birthday"));
                 user.setPhone(rs.getString("phone"));
                 user.setEmail(rs.getString("email"));
-                user.setEmail(rs.getString("email"));
                 user.setWeChatId(rs.getString("weChatId"));
                 user.setDescription(rs.getString("description"));
                 user.setRegistrationDate(rs.getString("registrationDate"));
@@ -88,7 +87,6 @@ public class UserDao {
             } else {
                 return null;
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

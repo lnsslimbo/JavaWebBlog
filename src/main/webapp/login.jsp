@@ -32,13 +32,13 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         <label for="userName">用户名</label>
         <input type="userName" class="form-control" id="userName" aria-describedby="userNameHelp" name="userName"
                value="${userName}">
-        <small id="userNameHelp" class="form-text text-muted">用户名长度在3-12之间</small>
+        <small id="userNameHelp" class="form-text text-muted">用户名长度在2-12之间</small>
 
     </div>
     <div class="form-group">
         <label for="password">密码</label>
         <input type="password" class="form-control" id="password" name="password">
-        <small id="passwordHelp" class="form-text text-muted">密码长度应在8-16之间</small
+        <small id="passwordHelp" class="form-text text-muted">密码长度应在8-16之间</small>
     </div>
     <span style="color:red">${errorMessage}</span><br>
     <button type="submit" class="btn btn-primary">登录</button>

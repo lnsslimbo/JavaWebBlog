@@ -38,8 +38,7 @@ public class RegisterServlet extends HttpServlet {
 		user.setWeChatId(request.getParameter("weChatId"));
 		user.setDescription(request.getParameter("description"));
 		user.setRegistrationDate(request.getParameter("registrationDate"));
-		user.setRole("role");
-		user.setStatus("status");
+		user.setRole(request.getParameter("role"));
 		//2. 检查数据
 		
 		UserService service = new UserService();
@@ -51,8 +50,8 @@ public class RegisterServlet extends HttpServlet {
 			return;
 		}
 		//用户名应在3~12之间
-		if(request.getParameter("userName").length()<3||request.getParameter("userName").length()>12){
-			request.setAttribute("errorMessage","用户名应在3-12之间!");
+		if(request.getParameter("userName").length()<2||request.getParameter("userName").length()>12){
+			request.setAttribute("errorMessage","用户名应在2-12之间!");
 			request.getRequestDispatcher("/register.jsp").forward(request, response);
 			return;
 		}
@@ -92,5 +91,4 @@ public class RegisterServlet extends HttpServlet {
 		request.setAttribute("user", user);
 		request.getRequestDispatcher("/success.jsp").forward(request, response);
 	}
-
 }
