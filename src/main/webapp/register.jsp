@@ -79,11 +79,11 @@
     </div>
     <div class="form-group">
         <label for="role">用户类型</label>
-        <select class="form-control" id="role" name="role">
-            <option selected>普通用户</option>
-            <option>管理员</option>
-            <option>访客用户</option>
-        </select>
+        <input type="text" class="form-control" id="role" name="role" value="普通用户" readonly>
+    </div>
+    <div class="form-group">
+        <label for="status">状态</label>
+        <input type="text" class="form-control" id="status" name="status" value="启用" readonly>
     </div>
     <span style="color:red">${errorMessage}</span><br>
     <button type="submit" class="btn btn-primary">注册</button>

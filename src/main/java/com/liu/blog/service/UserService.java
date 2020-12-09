@@ -44,11 +44,11 @@ public class UserService {
 			msg = "用户被禁用！";
 			return msg;
 		}
-//		//判断用户是否拥有权限
-//		if(!user.getRole().equals(role){
-//			msg = "用户权限不足";
-//			return msg;
-//		}
+/*		//判断用户是否拥有权限
+		if(!user.getRole().equals(role){
+			msg = "用户权限不足";
+			return msg;
+		}*/
 			return msg;
 	}
 	//判断用户是否已经存在

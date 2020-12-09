@@ -35,7 +35,6 @@ public class RegisterServlet extends HttpServlet {
 		user.setWeChatId(request.getParameter("weChatId"));
 		user.setDescription(request.getParameter("description"));
 		user.setRegistrationDate(request.getParameter("registrationDate"));
-		user.setRole(request.getParameter("role"));
 		//2. 检查数据
 		
 		UserService service = new UserService();
