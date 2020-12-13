@@ -87,9 +87,9 @@ public class UserService {
 		return newUser;
 	}
 	//删除用户名
-	public User deleteByUserName(String userName){
+	public User deleteByUserName(User user){
 		UserDao dao = new UserDao();
-		return dao.deleteByUserName(userName);
+		return dao.deleteByUserName(user.getUserName());
 	}
 	//查找用户名
 	public User findByUserName(String userName) {
@@ -116,14 +116,5 @@ public class UserService {
 		userDao.modifyUserStatus(userName,changedStatus);
 	}
 
-//	//启用用户
-//	public User onUser(String userName){
-//		UserDao dao = new UserDao();
-//		return dao.onUser(userName);
-//	}
-//	//禁用用户
-//	public User offUser(String userName){
-//		UserDao dao = new UserDao();
-//		return dao.offUser(userName);
-//	}
+
 }

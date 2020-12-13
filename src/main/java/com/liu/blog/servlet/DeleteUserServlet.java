@@ -22,7 +22,8 @@ public class DeleteUserServlet extends HttpServlet {
         userName = new String(userName.getBytes("utf-8"), "utf-8");
 
         UserService service = new UserService();
-        User user = service.deleteByUserName(userName);
+        User user = service.findByUserName(userName);
+        service.deleteByUserName(user);
 
         request.setAttribute("user", user);
         response.sendRedirect("UserServlet");

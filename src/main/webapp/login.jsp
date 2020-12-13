@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@ page import="com.liu.blog.entity.User" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
 String path = request.getContextPath();
@@ -18,31 +19,87 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link href="html/css/bootstrap.min.css" rel="stylesheet">
+    <script src="html/jquery.js"></script>
+
+    <script>
+        $(function(){
+            $("#login").click(function(){
+                hasError=false;
+                if($("#name").val()==''){
+                    $("#nameError").html("用户名不能为空！");
+                    hasError=true;
+                }
+                else{
+                    $("#nameError").html("");
+                }
+
+                if(hasError){
+                    return false;
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="html/js/bootstrap.min.js"></script>
+    <style>
+        .username input,.password input{
+            height: 50px;
+            padding-left: 30px;
+        }
+
+        .form-control-feedback {
+            line-height: 50px;
+            left: 525px;
+        }
+
+        .btn {background-color: lightblue;
+        }
+
+        .form-horizontal{text-align: center;}
+        .checkbox{left:400px;}
+
+    </style>
 
 </head>
 
-<body>
-<%@include file="layout/header.jsp" %>
+<body background="html/tu3.jpg">
 
-<form action="login" method="POST">
-    <h1>用户登录</h1>
-    <div class="form-group">
-        <label for="userName">用户名</label>
-        <input type="userName" class="form-control" id="userName" aria-describedby="userNameHelp" name="userName"
-               value="${userName}">
-        <small id="userNameHelp" class="form-text text-muted">用户名长度在2-12之间</small>
 
+
+<form action="login" method="POST" class="form-horizontal">
+    <h1 class="text-center text-info">用户登录</h1><br>
+
+    <div class="form-group has-feedback">
+        <div class="username">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            用户名：<input type="text" class="input-large" id="name" placeholder="用户名"
+                       aria-describedby="userNameHelp" name="userName" value="${userName}"><br>
+            <small id="userNameHelp" class="form-text text-muted">用户名长度在2-12之间</small>
+        </div>
     </div>
+
+    <div class="form-group pwd-top has-feedback">
+        <div class="password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            密码：<input type="password" class="input-large" id="password" placeholder="密码" name="password" value="${password}">
+            <span></span><br>
+        </div>
+    </div>
+
     <div class="form-group">
-        <label for="password">密码</label>
-        <input type="password" class="form-control" id="password" name="password">
-        <small id="passwordHelp" class="form-text text-muted">密码长度应在8-16之间</small>
+        <a href="register">注册</a>
     </div>
+
     <span style="color:red">${errorMessage}</span><br>
-    <button type="submit" class="btn btn-primary">登录</button>
-    <a href="register">没有账号？点击注册</a>
+
+    <div class="form-group">
+        <button class="btn btn-login" type="submit" id="login">登录</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index" class="btn btn-info">返回主页</a>
+    </div>
+
 </form>
 
 <%@include file="layout/footer.jsp" %>

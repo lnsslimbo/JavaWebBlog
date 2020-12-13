@@ -55,6 +55,33 @@ public class UserDao {
         }
         return user;
     }
+    //删除用户
+    public User deleteByUserName(User user){
+        Connection cn = DbObject.getConnection();;
+        PreparedStatement st = null;
+
+
+
+        try {
+            //4.执行sql
+            //用户的信息至少包括，用户的登录名、密码、用户的姓名、性别、出生日期、手机、Email、微信号、描述信息、注册日期等。
+            String sql = "delete user where userName=?";
+            System.out.println(sql);
+
+            st = cn.prepareStatement(sql);
+
+            st.setString(1, user.getUserName());
+
+            int ret = st.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //5.关闭数据库连接
+            DbObject.close(cn, st, null);
+        }
+        return user;
+    }
     //查找用户名
     public User findByUserName(String userName) {
         PreparedStatement st = null;
@@ -197,108 +224,6 @@ public class UserDao {
 
         return userList;
     }
-    //是否为管理员
-//    public String checkManager(String userName){
-//        String success = "";
-//        Connection cn = DbObject.getConnection();
-//        PreparedStatement st = null;
-//        ResultSet rs = null;
-//
-//        try{
-//            String sql = "select Position from Users where userName =?";
-//            System.out.println(sql);
-//
-//            st = cn.prepareStatement(sql);
-//
-//            st.setString(1, userName);
-//
-//            rs = st.executeQuery();
-//            if(rs.next()){
-//                if(rs.getString("role").equals("管理员")){
-//                    success = "";
-//                    return success;
-//                }
-//                else{
-//                    //System.out.println(1);
-//                    success += "该用户不是管理员，没有权限！";
-//                    return success;
-//                }
-//            }
-//        }catch (SQLException e) {
-//            e.printStackTrace();
-//        }finally{
-//            DbObject.close(cn, st, rs);
-//        }
-//        return success;
-//    }
-//    //检查用户状态
-//    public String checkStatus(String userName) {
-//
-//        PreparedStatement st = null;
-//        ResultSet rs = null;
-//        Connection cn = DbObject.getConnection();
-//        String success = "";
-//        try{
-//
-//            String sql = "select status from Users where userName =?";
-//            System.out.println(sql);
-//
-//            st = cn.prepareStatement(sql);
-//            st.setString(1, userName);
-//            rs = st.executeQuery();
-//
-//            if(rs.next()){
-//                if(rs.getString("status").equals("启用")){
-//                    success = "";
-//                    return success;
-//                }
-//                else{
-//                    success += "该用户被禁用，不能登录！";
-//                    return success;
-//                }
-//            }
-//        }catch (SQLException e) {
-//            e.printStackTrace();
-//        }finally{
-//            DbObject.close(cn, st, rs);
-//        }
-//        return success;
-//    }
-//    //检查用户类型
-//    public String checkRole(String userName,String role){
-//        String success = "";
-//        Connection cn = DbObject.getConnection();
-//        PreparedStatement st = null;
-//        ResultSet rs = null;
-//
-//        try{
-//            String sql = "select role from Users where userName =?";
-//            System.out.println(sql);
-//
-//            st = cn.prepareStatement(sql);
-//
-//            st.setString(1, userName);
-//
-//            rs = st.executeQuery();
-//            if(rs.next()){
-//                if(rs.getString("Position").equals(role)){
-//                    success = "";
-//                    return success;
-//                }
-//                else{
-//                    //System.out.println(1);
-//                    success += "该用户不是" + role + "，请重新选择角色！";
-//                    return success;
-//                }
-//            }
-//        }catch (SQLException e) {
-//            e.printStackTrace();
-//        }finally{
-//            DbObject.close(cn, st, rs);
-//        }
-//        return success;
-//    }
-    //删除用户
     public User deleteByUserName(String userName){
         Connection cn = DbObject.getConnection();
         PreparedStatement st = null;
@@ -328,62 +253,6 @@ public class UserDao {
         return null;
 
     }
-    /*//启用用户
-    public User onUser(String userName){
-        Connection cn = DbObject.getConnection();
-        PreparedStatement st = null;
-        User user = null;
-
-        try {
-
-            String sql = "update Users set status = ? where UserName = ?;";
-            System.out.println(sql);
-
-            st = cn.prepareStatement(sql);
-            st.setString(1, "启用");
-            st.setString(2, userName);
-
-            int ret = st.executeUpdate();
-            if(ret>0){
-                user = new User();
-                return user;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally{
-            DbObject.close(cn, st, null);
-        }
-
-        return user;
-    }
-    //禁用用户
-    public User offUser(String userName){
-        Connection cn = DbObject.getConnection();
-        PreparedStatement st = null;
-        User user = null;
-
-        try {
-
-            String sql = "update Users set status = ? where UserName = ?;";
-            System.out.println(sql);
-
-            st = cn.prepareStatement(sql);
-            st.setString(1, "禁用");
-            st.setString(2, userName);
-
-            int ret = st.executeUpdate();
-            if(ret>0){
-                user = new User();
-                return user;
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }finally{
-            DbObject.close(cn, st, null);
-        }
-
-        return user;
-    }*/
     //更改用户状态
     public void modifyUserStatus(String userName, String changedStatus) {
         Connection cn = null;
@@ -408,5 +277,6 @@ public class UserDao {
             DbObject.close(cn, st, null);
         }
     }
+
 }
 

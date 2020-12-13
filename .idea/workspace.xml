@@ -10,10 +10,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="新增文章发布时间和修改时间">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/article1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/article2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/article3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/article4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/article5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/article6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/dahai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/min1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/read.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/tu1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/tu3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/wang1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/wang2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/wang3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/white.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/xianggang.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/xingzuo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/yiselie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/zhijing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayUserInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayUserInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/manageUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manageUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/modifyUserInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/changeUserInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/modifyUserPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/changeUserPassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/displayUserInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/displayUserInformation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/layout/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,6 +401,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1607503557050" />
+    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607846788016">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1607846788016" />
     <state x="458" y="201" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1607436369698">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -365,66 +417,66 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607504507950" />
-    <state width="1055" height="198" key="GridCell.Tab.0.bottom" timestamp="1607508742071">
+    <state width="1039" height="146" key="GridCell.Tab.0.bottom" timestamp="1607846816783">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607508727645" />
-    <state width="1055" height="198" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607508742071" />
-    <state width="1055" height="198" key="GridCell.Tab.0.center" timestamp="1607508742063">
+    <state width="1039" height="146" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607846805039" />
+    <state width="1039" height="146" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607846816783" />
+    <state width="1039" height="146" key="GridCell.Tab.0.center" timestamp="1607846816776">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607508727643" />
-    <state width="1055" height="198" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1607508742063" />
-    <state width="1055" height="198" key="GridCell.Tab.0.left" timestamp="1607508742044">
+    <state width="1039" height="146" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607846805037" />
+    <state width="1039" height="146" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1607846816776" />
+    <state width="1039" height="146" key="GridCell.Tab.0.left" timestamp="1607846816774">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607508727642" />
-    <state width="1055" height="198" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1607508742044" />
-    <state width="1055" height="198" key="GridCell.Tab.0.right" timestamp="1607508742065">
+    <state width="1039" height="146" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607846805036" />
+    <state width="1039" height="146" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1607846816774" />
+    <state width="1039" height="146" key="GridCell.Tab.0.right" timestamp="1607846816782">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607508727644" />
-    <state width="1055" height="198" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1607508742065" />
-    <state width="1055" height="198" key="GridCell.Tab.1.bottom" timestamp="1607508742083">
+    <state width="1039" height="146" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607846805038" />
+    <state width="1039" height="146" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1607846816782" />
+    <state width="1039" height="146" key="GridCell.Tab.1.bottom" timestamp="1607846816417">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607508727653" />
-    <state width="1055" height="198" key="GridCell.Tab.1.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607508742083" />
-    <state width="1055" height="198" key="GridCell.Tab.1.center" timestamp="1607508742077">
+    <state width="1039" height="146" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607846805051" />
+    <state width="1039" height="146" key="GridCell.Tab.1.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607846816417" />
+    <state width="1039" height="146" key="GridCell.Tab.1.center" timestamp="1607846816415">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607508727652" />
-    <state width="1055" height="198" key="GridCell.Tab.1.center/0.25.1440.806@0.25.1440.806" timestamp="1607508742077" />
-    <state width="1055" height="198" key="GridCell.Tab.1.left" timestamp="1607508742073">
+    <state width="1039" height="146" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607846805050" />
+    <state width="1039" height="146" key="GridCell.Tab.1.center/0.25.1440.806@0.25.1440.806" timestamp="1607846816415" />
+    <state width="1039" height="146" key="GridCell.Tab.1.left" timestamp="1607846816414">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607508727651" />
-    <state width="1055" height="198" key="GridCell.Tab.1.left/0.25.1440.806@0.25.1440.806" timestamp="1607508742073" />
-    <state width="1055" height="198" key="GridCell.Tab.1.right" timestamp="1607508742080">
+    <state width="1039" height="146" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607846805049" />
+    <state width="1039" height="146" key="GridCell.Tab.1.left/0.25.1440.806@0.25.1440.806" timestamp="1607846816414" />
+    <state width="1039" height="146" key="GridCell.Tab.1.right" timestamp="1607846816416">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607508727652" />
-    <state width="1055" height="198" key="GridCell.Tab.1.right/0.25.1440.806@0.25.1440.806" timestamp="1607508742080" />
-    <state width="1055" height="198" key="GridCell.Tab.2.bottom" timestamp="1607508741452">
+    <state width="1039" height="146" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607846805051" />
+    <state width="1039" height="146" key="GridCell.Tab.1.right/0.25.1440.806@0.25.1440.806" timestamp="1607846816416" />
+    <state width="1039" height="146" key="GridCell.Tab.2.bottom" timestamp="1607846816411">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607508727650" />
-    <state width="1055" height="198" key="GridCell.Tab.2.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607508741452" />
-    <state width="1055" height="198" key="GridCell.Tab.2.center" timestamp="1607508741444">
+    <state width="1039" height="146" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607846805046" />
+    <state width="1039" height="146" key="GridCell.Tab.2.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607846816411" />
+    <state width="1039" height="146" key="GridCell.Tab.2.center" timestamp="1607846816404">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607508727647" />
-    <state width="1055" height="198" key="GridCell.Tab.2.center/0.25.1440.806@0.25.1440.806" timestamp="1607508741444" />
-    <state width="1055" height="198" key="GridCell.Tab.2.left" timestamp="1607508741442">
+    <state width="1039" height="146" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607846805041" />
+    <state width="1039" height="146" key="GridCell.Tab.2.center/0.25.1440.806@0.25.1440.806" timestamp="1607846816404" />
+    <state width="1039" height="146" key="GridCell.Tab.2.left" timestamp="1607846816403">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607508727646" />
-    <state width="1055" height="198" key="GridCell.Tab.2.left/0.25.1440.806@0.25.1440.806" timestamp="1607508741442" />
-    <state width="1055" height="198" key="GridCell.Tab.2.right" timestamp="1607508741447">
+    <state width="1039" height="146" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607846805041" />
+    <state width="1039" height="146" key="GridCell.Tab.2.left/0.25.1440.806@0.25.1440.806" timestamp="1607846816403" />
+    <state width="1039" height="146" key="GridCell.Tab.2.right" timestamp="1607846816408">
       <screen x="0" y="25" width="1440" height="806" />
     </state>
-    <state width="1055" height="198" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607508727647" />
-    <state width="1055" height="198" key="GridCell.Tab.2.right/0.25.1440.806@0.25.1440.806" timestamp="1607508741447" />
+    <state width="1039" height="146" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607846805042" />
+    <state width="1039" height="146" key="GridCell.Tab.2.right/0.25.1440.806@0.25.1440.806" timestamp="1607846816408" />
     <state x="536" y="174" key="RollbackChangesDialog" timestamp="1607500260306">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -462,9 +514,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

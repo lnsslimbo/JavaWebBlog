@@ -24,11 +24,6 @@
 <body>
 <%@include file="layout/header.jsp" %>
 
-
-<%--个人信息： <br>--%>
-<%--用户名：${ user.userName}<br>--%>
-<%--全名：${user.fullName }--%>
-
 <%--用户的信息至少包括，用户的登录名、密码、用户的姓名、性别、出生日期、手机、Email、微信号、描述信息、注册日期等。--%>
 <h1>个人信息</h1>
 <table class="table">
@@ -68,6 +63,14 @@
     <tr>
         <th>注册日期</th>
         <td>${user.registrationDate}</td>
+    </tr>
+    <tr>
+        <th>状态</th>
+        <th>${user.status}</th>
+    </tr>
+    <tr>
+        <th>用户类型</th>
+        <th>${user.role}</th>
     </tr>
     </tbody>
 </table>
