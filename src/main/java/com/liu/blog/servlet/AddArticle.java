@@ -97,6 +97,7 @@ public class AddArticle extends HttpServlet {
 
         request.setAttribute("article", article);
         request.getRequestDispatcher("/success.jsp").forward(request, response);
+        
     }
 
 }

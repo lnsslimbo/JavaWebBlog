@@ -1,17 +1,13 @@
 <%@ page language="java" pageEncoding="utf-8" %>
-<canvas width="1777" height="841" style="position: fixed; left: 0; top: 0; z-index: 999; pointer-events: none;"></canvas>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" href="main">博客</a>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="main">博客儿🐒</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-
-			<li class="nav-item active">
-				<a class="nav-link" href="main">主页 <span class="sr-only">(my)</span></a>
-			</li>
 
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="VisitorDropdown" role="button" data-toggle="dropdown"

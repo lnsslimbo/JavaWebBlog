@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
     <div class="container">
         <%@include file="layout/header.jsp" %>
         <h1>管理用户</h1>

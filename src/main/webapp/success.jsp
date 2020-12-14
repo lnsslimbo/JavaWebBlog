@@ -20,12 +20,12 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 </head>
-
-<body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
-<%@include file="layout/header.jsp" %>
-成功！ <br>
-用户名：${user.userName}<br>
-全名：${user.fullName}<br>
-<%@include file="layout/footer.jsp" %>
+<div class="container">
+    <body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
+    <%@include file="layout/header.jsp" %>
+    <h1>操作成功！</h1>
+    <script> window.setInterval("location='main.jsp'",2000); </script>
+    <%@include file="layout/footer.jsp" %>
+</div>
 </body>
 </html>
