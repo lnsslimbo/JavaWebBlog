@@ -12,14 +12,42 @@ public class ArticleService {
 
         Article newArticle = articleDao.addArticle(article);
 
-        //记录日志等。。。。。。
-
         return newArticle;
     }
 
+    public void deleteArticle(Article article){
+
+        ArticleDao articleDao = new ArticleDao();
+        articleDao.deleteArticle(article);
+    }
+
     public List<Article> findAll() {
-        UserDao userDao = new UserDao();
         ArticleDao articleDao = new ArticleDao();
         return articleDao.findAll();
+    }
+
+    public Article findByArticleTypeNameAndUserName(String articleTypeName, String userName){
+        ArticleDao articleDao = new ArticleDao();
+        return articleDao.findByArticleTypeNameAndUserName(articleTypeName,userName);
+    }
+
+    public Article findByArticleName(String articleName){
+        ArticleDao articleDao = new ArticleDao() ;
+        return articleDao.findByArticleName(articleName);
+    }
+
+    public Article changeArticle(Article article){
+        ArticleDao articleDao = new ArticleDao();
+        return articleDao.changeArticle(article);
+    }
+
+    public List<Article> findByUserName(String articleName){
+        ArticleDao articleDao = new ArticleDao();
+        return articleDao.findByUserName(articleName);
+    }
+
+    public List<Article> findByArticleNameLike(String articleNameLike) {
+        ArticleDao articleDao = new ArticleDao();
+        return articleDao.findByArticleNameLike(articleNameLike);
     }
 }

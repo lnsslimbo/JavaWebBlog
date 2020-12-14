@@ -6,6 +6,7 @@ public class Article {
     private String articleTypeName;
     private String articleContent;
     private String userName;
+    private String userEmail;
 
     private String publishDate;
     private String modDate;
@@ -53,6 +54,14 @@ public class Article {
         this.userName = userName;
     }
 
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
+
     public String getPublishDate() {
         return publishDate;
     }
@@ -64,7 +73,7 @@ public class Article {
     public String getModDate() {
         return modDate;
     }
-    
+
     public void setModDate(String modDate) {
         this.modDate = modDate;
     }

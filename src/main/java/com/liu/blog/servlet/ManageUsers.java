@@ -16,17 +16,24 @@ import com.liu.blog.service.UserService;
 public class ManageUsers extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		UserService service = new UserService();
-		
-		List<User> userList = service.findAll();
-		
+		String userName = (String) request.getSession().getAttribute("UserName");
+		UserService userService = new UserService();
+		if (!userService.checkRole(userName)){
+			response.sendRedirect("main");
+			return;
+		}
+
+
+		List<User> userList = userService.findAll();
+
 		request.setAttribute("userList", userList);
 		request.getRequestDispatcher("/manageUsers.jsp").forward(request, response);
-		
+
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 	}
 
 }

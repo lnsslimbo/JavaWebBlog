@@ -23,8 +23,9 @@
 
 <body>
 <div class="container">
+    <%@include file="layout/header.jsp" %>
 
-    <form action="changeUserInformation" method="POST">
+    <form action="changeMyUserInformation" method="POST">
         <div class="form-group">
             <label for="userName">用户名</label>
             <input type="userName" class="form-control" id="userName" name="userName"

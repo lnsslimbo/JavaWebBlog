@@ -23,12 +23,22 @@
 
 <body>
 <div class="container">
-
-    <form action="changeUserInformation" method="POST">
+    <%@include file="layout/header.jsp" %>
+    <h1>添加用户</h1>
+    <form action="addUser" method="POST">
         <div class="form-group">
             <label for="userName">用户名</label>
-            <input type="userName" class="form-control" id="userName" name="userName"
-                   value="${user.userName}" readonly>
+            <input type="userName" class="form-control" id="userName" aria-describedby="userNameHelp" name="userName"
+                   value="${user.userName}">
+            <small id="userNameHelp" class="form-text text-muted">用户名长度在3-12之间</small>
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="passwordAgain">再次输入密码</label>
+            <input type="password" class="form-control" id="passwordAgain" name="passwordAgain">
         </div>
         <div class="form-group">
             <label for="fullName">姓名</label>
@@ -63,10 +73,23 @@
             <label for="description">描述信息</label>
             <input type="text" class="form-control" id="description" name="description" value="${user.description}">
         </div>
+        <div class="form-group">
+            <label for="role">角色</label>
+            <select class="form-control" id="role" name="role">
+                <option selected>用户</option>
+                <option>管理员</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status">状态</label>
+            <select class="form-control" id="status" name="status">
+                <option selected>启用</option>
+                <option>禁用</option>
+            </select>
+        </div>
         <span style="color:red">${errorMessage}</span><br>
-        <button type="submit" class="btn btn-primary">提交修改</button>
+        <button type="submit" class="btn btn-primary">添加用户</button>
     </form>
-
     <%@include file="layout/footer.jsp" %>
 </div>
 </body>

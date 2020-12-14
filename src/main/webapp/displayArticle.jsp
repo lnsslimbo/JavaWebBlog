@@ -11,7 +11,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'manageUsers.jsp' starting page</title>
+    <title>My JSP 'displayArticle.jsp' starting page</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -20,7 +20,6 @@
     <meta http-equiv="description" content="This is my page">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -34,7 +33,7 @@
         <th>用户名</th>
         <th>文章名</th>
         <th>文章类型</th>
-        <th>文章内容</th>
+        <th>操作</th>
     </tr>
     </thead>
     <tbody>
@@ -48,9 +47,12 @@
         </td>
         <td><%=article.getArticleTypeName()%>
         </td>
-        <td><%=article.getArticleContent()%>
-        </td>
-    </tr>
+            <td>
+                <a href="manageDisplayArticle?articleName=<%=article.getArticleName()%>">详情</a>
+                <a href="manageChangeArticle?articleName=<%=article.getArticleName()%>">修改</a>
+                <a href="manageDeleteArticle?articleName=<%=article.getArticleName()%>">删除</a>
+            </td>
+        </tr>
     <%
         }
     %>

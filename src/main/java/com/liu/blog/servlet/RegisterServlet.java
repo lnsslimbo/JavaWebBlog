@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.liu.blog.entity.User;
 import com.liu.blog.service.UserService;
@@ -16,7 +17,9 @@ public class RegisterServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 		request.getRequestDispatcher("/register.jsp").forward(request, response);
+
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -37,12 +40,29 @@ public class RegisterServlet extends HttpServlet {
 		user.setRegistrationDate(request.getParameter("registrationDate"));
 		user.setRole(request.getParameter("role"));
 		user.setStatus(request.getParameter("status"));
-
 		System.out.println(user);
 
+
+		/*String userName = request.getParameter("userName");
+		String password = request.getParameter("password");
+		String passwordAgain = request.getParameter("passwordAgain");*/
 		//2. 检查数据
-		UserService service = new UserService();
-		
+		UserService userservice = new UserService();
+
+		/*String errorMessage = UserService.registerVerify(userName, password,passwordAgain);
+
+		if (errorMessage.equals("success")) {
+			HttpSession session = request.getSession();
+			session.setAttribute("UserName", userName);
+			response.sendRedirect("main?errorMessage=" + errorMessage);
+		} else {
+			request.setAttribute("userName", userName);
+			request.setAttribute("errorMessage", errorMessage);
+			request.getRequestDispatcher("/login.jsp").forward(request, response);
+		}
+*/
+
+
 		//用户名不为空
 		if (request.getParameter("userName").equals("")){
 			request.setAttribute("errorMessage", "用户名不能为空！");
@@ -76,17 +96,15 @@ public class RegisterServlet extends HttpServlet {
 			request.getRequestDispatcher("/register.jsp").forward(request, response);
 			return;
 		}
-
 		//3.-1 检查用户是否存在
-		if (service.exists(user.getUserName())){
+		if (userservice.exists(user.getUserName())){
 			request.setAttribute("user", user);
 			request.setAttribute("errorMessage", "用户名已经存在！");
 			request.getRequestDispatcher("/register.jsp").forward(request, response);
 			return;
 		}
-		
 		//3. 新加用户
-		user = service.addUser(user);
+		user = userservice.addUser(user);
 		
 		request.setAttribute("user", user);
 		request.getRequestDispatcher("/success.jsp").forward(request, response);

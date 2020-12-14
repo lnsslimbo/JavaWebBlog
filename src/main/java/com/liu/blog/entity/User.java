@@ -12,7 +12,7 @@ public class User {
     private String weChatId;
     private String description;//描述信息
     private String registrationDate;//注册日期
-    private String role;//用户类型 "普通用户","管理员"
+    private String role;//用户类型 "用户","管理员"
     private String status;//用户状态 "启用","禁用"
 
     public User() {

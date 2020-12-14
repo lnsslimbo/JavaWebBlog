@@ -23,7 +23,7 @@
 
 <body>
 <%@include file="layout/header.jsp" %>
-注册成功！ <br>
+成功！ <br>
 用户名：${user.userName}<br>
 全名：${user.fullName}<br>
 <%@include file="layout/footer.jsp" %>

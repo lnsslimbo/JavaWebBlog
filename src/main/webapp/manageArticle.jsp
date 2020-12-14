@@ -1,5 +1,7 @@
 <%@ page language="java" import="java.util.*" import="com.liu.blog.entity.User" pageEncoding="utf-8" %>
 <%@ page import="com.liu.blog.entity.ArticleType" %>
+<%@ page import="com.liu.blog.entity.Article" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -10,7 +12,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'displayArticleType.jsp' starting page</title>
+    <title>My JSP 'manageUsers.jsp' starting page</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -23,32 +25,37 @@
 </head>
 
 <body>
-<%@include file="layout/header.jsp" %>
-<%
-    List<ArticleType> articleTypeList = (List<ArticleType>) request.getAttribute("articleTypeList");
-%>
-<table class="table table-hover">
-    <thead>
+<div class="container">
+    <%@include file="layout/header.jsp" %>
+
+    <h1>最近发表的所有文章</h1>
+    <table class="table table-hover">
+        <thead>
         <tr>
             <th>用户名</th>
+            <th>文章号</th>
+            <th>文章名</th>
             <th>文章类型</th>
+            <th>创建时间</th>
+            <th>查看文章</th>
+
         </tr>
-    </thead>
-    <tbody>
-        <%
-            for (ArticleType articleType : articleTypeList) {
-        %>
-        <tr>
-            <td><%=articleType.getUserName()%>
-            </td>
-            <td><%=articleType.getArticleTypeName()%>
-            </td>
-        </tr>
-        <%
-            }
-        %>
-    </tbody>
-</table>
-<%@include file="layout/footer.jsp" %>
+        </thead>
+        <tbody>
+        <c:forEach items="${articleList}" var="article">
+            <tr>
+                <td>${article.userName}</td>
+                <td>${article.articleId}</td>
+                <td>${article.articleName}</td>
+                <td>${article.articleTypeName}</td>
+                <td>${article.articleCreateDate}</td>
+                <td><a href="displayArticle?articleId=${article.articleId}">查看</a></td>
+
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
+    <%@include file="layout/footer.jsp" %>
+</div>
 </body>
 </html>

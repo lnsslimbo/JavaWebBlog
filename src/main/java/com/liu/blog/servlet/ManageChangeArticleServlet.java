@@ -18,8 +18,8 @@ import com.liu.blog.service.ArticleTypeService;
 import com.liu.blog.service.UserService;
 
 
-@WebServlet("/managerModifyArticle")
-public class ManageModifyArticleServlet extends HttpServlet {
+@WebServlet("/manageChangeArticle")
+public class ManageChangeArticleServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
@@ -42,7 +42,7 @@ public class ManageModifyArticleServlet extends HttpServlet {
         request.setAttribute("passage", passage);
         request.setAttribute("user", user);
         request.setAttribute("listArticleType", listArticleType);
-        request.getRequestDispatcher("/ManagerModifyArticle.jsp").forward(request, response);
+        request.getRequestDispatcher("/ManagerChangeArticle.jsp").forward(request, response);
     }
 
     /**
@@ -70,7 +70,7 @@ public class ManageModifyArticleServlet extends HttpServlet {
         passage.setArticleContent(articleContent);
         passage.setUserEmail(email);
 
-        service.modifyArticle(passage);
+        service.changeArticle(passage);
 
         session.setAttribute("email", email);
         session.setAttribute("articleName", articleName);
