@@ -208,6 +208,7 @@ public class ArticleDao {
                 article.setArticleName(rs.getString("articleName"));
                 article.setArticleTypeName(rs.getString("articleTypeName"));
                 article.setArticleContent(rs.getString("articleContent"));
+                article.setPublishDate(rs.getString("publishDate"));
                 article.setUserName(rs.getString("userName"));
 
                 return article;
@@ -230,13 +231,12 @@ public class ArticleDao {
         PreparedStatement st = null;
 
         try {
-            String sql = "update article set articleName=?,articleTypeName=?,articleContent=? where articleId=?";
+            String sql = "update article set articleName=?,articleContent=? where articleName=?";
             st = cn.prepareStatement(sql);
 
             st.setString(1, article.getArticleName());
-            st.setString(2, article.getArticleTypeName());
-            st.setString(3, article.getArticleContent());
-            st.setString(4, String.valueOf(article.getArticleId()));
+            st.setString(2, article.getArticleContent());
+            st.setString(3, article.getArticleName());
 
             System.out.println(st);
             int ret = st.executeUpdate();

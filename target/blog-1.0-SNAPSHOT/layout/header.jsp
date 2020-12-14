@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@ page language="java" pageEncoding="utf-8" %>
 <canvas width="1777" height="841" style="position: fixed; left: 0; top: 0; z-index: 999; pointer-events: none;"></canvas>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="main">博客</a>
@@ -16,7 +16,7 @@
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="VisitorDropdown" role="button" data-toggle="dropdown"
 				   aria-haspopup="true" aria-expanded="false">
-					浏览
+					游览
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="manageArticle">所有文章</a>

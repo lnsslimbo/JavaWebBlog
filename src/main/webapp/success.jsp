@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
 <%@include file="layout/header.jsp" %>
 成功！ <br>
 用户名：${user.userName}<br>

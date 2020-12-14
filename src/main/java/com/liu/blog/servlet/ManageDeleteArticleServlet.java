@@ -18,12 +18,13 @@ public class ManageDeleteArticleServlet extends HttpServlet {
         String articleName=request.getParameter("articleName");
 
         ArticleService service=new ArticleService();
-        Article article=service.findByArticleName(articleName);
 
+        Article article=service.findByArticleName(articleName);
         request.setAttribute("article", article);
+
         service.deleteArticle(article);
 
-        request.getRequestDispatcher("ListArticle").forward(request,response);
+        request.getRequestDispatcher("/manageMyArticle").forward(request,response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

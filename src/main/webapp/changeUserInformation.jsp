@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
 <div class="container">
     <%@include file="layout/header.jsp" %>
 
@@ -65,7 +65,9 @@
             <input type="text" class="form-control" id="description" name="description" value="${user.description}">
         </div>
         <span style="color:red">${errorMessage}</span><br>
-        <button type="submit" class="btn btn-primary">提交修改</button>
+        <div>
+            <button type="submit" class="btn btn-default">提交修改</button>
+        </div>
     </form>
 
     <%@include file="layout/footer.jsp" %>

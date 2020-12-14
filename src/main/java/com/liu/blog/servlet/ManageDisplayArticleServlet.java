@@ -19,37 +19,17 @@ public class ManageDisplayArticleServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session=request.getSession();
 
-        String email=request.getParameter("email");
+        String articleName=request.getParameter("articleName");
 
         ArticleService serviceArticle = new ArticleService();
-        UserService serviceUser=new UserService();
 
-        User user=serviceUser.findByEmail(email);
-
-        String articleName=null;
-
-        if(session.getAttribute("email")!=null) {
-            articleName=(String) session.getAttribute("articleName");
             Article article=serviceArticle.findByArticleName(articleName);
-            session.setAttribute("article", article);
-            session.setAttribute("userSession", user);
 
-            session.setAttribute("email", email);
+            session.setAttribute("article", article);
 
             request.setAttribute("article", article);
-        }else {
-            articleName=request.getParameter("articleName");
-            Article article=serviceArticle.findByArticleName(articleName);
-            session.setAttribute("article", article);
-            session.setAttribute("userSession", user);
 
-            session.setAttribute("email", email);
-
-            request.setAttribute("article", article);
-        }
-        request.setAttribute("user", user);
-
-        request.getRequestDispatcher("/ManagerDisplayArticle.jsp").forward(request, response);
+        request.getRequestDispatcher("/manageDisplayArticle.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

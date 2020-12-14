@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<%@ page language="java" pageEncoding="utf-8" %>
 <canvas width="1777" height="841" style="position: fixed; left: 0; top: 0; z-index: 999; pointer-events: none;"></canvas>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="main">博客</a>

@@ -32,10 +32,11 @@
                 <th>姓名</th>
                 <th>角色</th>
                 <th>状态</th>
-                <th>查看用户信息</th>
-                <th>修改用户信息</th>
-                <th>修改用户密码</th>
-                <th>更改用户状态</th>
+                <th>操作</th>
+<%--                <th>查看用户信息</th>--%>
+<%--                <th>修改用户信息</th>--%>
+<%--                <th>修改用户密码</th>--%>
+<%--                <th>更改用户状态</th>--%>
             </tr>
             <c:forEach items="${userList}" var="user">
                 <tr>
@@ -43,10 +44,12 @@
                     <td>${user.fullName}</td>
                     <td>${user.role}</td>
                     <td>${user.status}</td>
-                    <td><a href="displayUser?userName=${user.userName}">查看</a></td>
-                    <td><a href="changeUserInformation?userName=${user.userName}">修改</a></td>
-                    <td><a href="changeUserPassword?userName=${user.userName}">修改</a></td>
-                    <td><a href="changeUserStatus?userName=${user.userName}">更改</a></td>
+                    <td>
+                        <a href="displayUser?userName=${user.userName}">查看信息</a>
+                        <a href="changeUserInformation?userName=${user.userName}">修改信息</a>
+                        <a href="changeUserPassword?userName=${user.userName}">修改密码</a>
+                        <a href="changeUserStatus?userName=${user.userName}">更改状态</a>
+                    </td>
                 </tr>
             </c:forEach>
 

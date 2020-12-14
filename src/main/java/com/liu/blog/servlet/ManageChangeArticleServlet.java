@@ -25,63 +25,49 @@ public class ManageChangeArticleServlet extends HttpServlet {
         HttpSession session=request.getSession();
 
         ArticleService serviceArticle = new ArticleService();
-        UserService serviceUser=new UserService();
+
         ArticleTypeService serviceArticleType=new ArticleTypeService();
         List<ArticleType> listArticleType=serviceArticleType.findAll();
 
 
         String articleName=request.getParameter("articleName");
 
-        Article passage=serviceArticle.findByArticleName(articleName);
-        User user=serviceUser.findByEmail(passage.getUserEmail());
+        Article article=serviceArticle.findByArticleName(articleName);
 
-        session.setAttribute("passageSession", passage);
-        session.setAttribute("userSession", user);
+        session.setAttribute("articleSession", article);
 
-        request.setAttribute("passage", passage);
-        request.setAttribute("user", user);
+        request.setAttribute("article", article);
+
         request.setAttribute("listArticleType", listArticleType);
-        request.getRequestDispatcher("/ManagerChangeArticle.jsp").forward(request, response);
+        request.getRequestDispatcher("/manageChangeArticle.jsp").forward(request, response);
     }
 
-    /**
-     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
         request.setCharacterEncoding("utf-8");
 
         HttpSession session=request.getSession();
 
-        String articleName=request.getParameter("inputArticleTitle");
-        String articleType=request.getParameter("inputArticleArticleType");
+        String articleName=request.getParameter("articleName");
         String articleContent=request.getParameter("inputArticleContent");
-        String email=request.getParameter("email");
+
 
         ArticleService service =new ArticleService();
-        UserService serviceUser=new UserService();
 
-        Article passage = new Article();
-        User user=serviceUser.findByEmail(email);
+        Article article = service.findByArticleName(articleName);
 
-        passage.setArticleName(articleName);
-        passage.setArticleTypeName(articleType);
-        passage.setArticleContent(articleContent);
-        passage.setUserEmail(email);
+        article.setArticleName(articleName);
+        article.setArticleContent(articleContent);
 
-        service.changeArticle(passage);
-
-        session.setAttribute("email", email);
+        article=service.changeArticle(article);
         session.setAttribute("articleName", articleName);
 
-        session.setAttribute("passage", passage);
-        session.setAttribute("userSession", user);
+        session.setAttribute("article", article);
 
         request.setAttribute("articleName", articleName);
-        request.setAttribute("user", user);
-        request.setAttribute("passage", passage);
+        request.setAttribute("article", article);
 
-        request.getRequestDispatcher("/managerDisplayArticle").forward(request,response);
+        request.getRequestDispatcher("/manageDisplayArticle.jsp").forward(request,response);
     }
 
 }

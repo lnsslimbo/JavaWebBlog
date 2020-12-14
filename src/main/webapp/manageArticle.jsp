@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
 <div class="container">
     <%@include file="layout/header.jsp" %>
 
@@ -49,7 +49,7 @@
                 <td>${article.articleName}</td>
                 <td>${article.articleTypeName}</td>
                 <td>${article.publishDate}</td>
-                <td><a href="displayArticle?articleId=${article.articleId}">查看</a></td>
+                <td><a href="manageDisplayArticle?articleName=${article.articleName}">查看</a></td>
 
             </tr>
         </c:forEach>

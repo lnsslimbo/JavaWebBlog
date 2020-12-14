@@ -1,6 +1,4 @@
-<%@ page language="java" import="java.util.*" import="com.liu.blog.entity.User" pageEncoding="utf-8" %>
-<%@ page import="com.liu.blog.entity.ArticleType" %>
-<%@ page import="com.liu.blog.entity.Article" %>
+<%@ page language="java" pageEncoding="utf-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
     String path = request.getContextPath();
@@ -48,9 +46,9 @@
                 <td>${article.articleId}</td>
                 <td>${article.articleName}</td>
                 <td>${article.articleTypeName}</td>
-                <td><a href="displayArticle?articleName=${article.articleName}">查看</a></td>
-                <td><a href="changeArticle?articleId=${article.articleId}">修改</a></td>
-                <td><a href="deleteArticle?articleId=${article.articleId}">删除</a></td>
+                <td><a href="manageDisplayArticle?articleName=${article.articleName}">详情</a></td>
+                <td><a href="manageChangeArticle?articleName=${article.articleName}">修改</a></td>
+                <td><a href="manageDeleteArticle?articleName=${article.articleName}">删除</a></td>
             </tr>
         </c:forEach>
         </tbody>

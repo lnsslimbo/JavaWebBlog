@@ -22,7 +22,8 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
+<div class="container">
 <%@include file="layout/header.jsp" %>
 <%
     List<Article> articleList = (List<Article>) request.getAttribute("articleList");
@@ -48,9 +49,9 @@
         <td><%=article.getArticleTypeName()%>
         </td>
             <td>
-                <a href="manageDisplayArticle?articleName=<%=article.getArticleName()%>">详情</a>
-                <a href="manageChangeArticle?articleName=<%=article.getArticleName()%>">修改</a>
-                <a href="manageDeleteArticle?articleName=<%=article.getArticleName()%>">删除</a>
+                <a href="manageDisplayArticle?articleName=${article.articleName}">详情</a>
+<%--                <a href="manageChangeArticle?articleName=<%=article.getArticleName()%>">修改</a>--%>
+<%--                <a href="manageDeleteArticle?articleName=<%=article.getArticleName()%>">删除</a>--%>
             </td>
         </tr>
     <%
@@ -59,5 +60,6 @@
     </tbody>
 </table>
 <%@include file="layout/footer.jsp" %>
+</div>
 </body>
 </html>
