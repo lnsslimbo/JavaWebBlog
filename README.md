@@ -1,10 +1,6 @@
-# JavaWebBlog
-JavaWeb的博客
+# LnssBlog
 
-Java Servlet + JSP + MySQL + BootStrap
+***Lnss's Blog***
 
-仅供参考
 
-如何让孩子爱上学习？
-
-Just call him/her BABY.
+揪一根儿头发可以变出一行代码，抓一把头发可以完成一个项目，你还在等什么
