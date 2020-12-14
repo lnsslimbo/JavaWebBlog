@@ -28,7 +28,7 @@ public class ChangeArticle extends HttpServlet {
         List<ArticleType> articleTypeList = articleTypeService.findByUserName(userName);
         request.setAttribute("articleTypeList", articleTypeList);
 
-        //获取当前文章号的文章
+        //获取当前文章名的文章
         String articleName = String.valueOf(Integer.parseInt(request.getParameter("articleName")));
         ArticleService articleService = new ArticleService();
         Article article = articleService.findByArticleName(articleName);

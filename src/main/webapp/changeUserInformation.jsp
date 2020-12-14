@@ -23,6 +23,7 @@
 
 <body>
 <div class="container">
+    <%@include file="layout/header.jsp" %>
 
     <form action="changeUserInformation" method="POST">
         <div class="form-group">

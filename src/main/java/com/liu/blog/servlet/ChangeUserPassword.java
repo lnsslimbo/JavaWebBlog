@@ -16,34 +16,38 @@ public class ChangeUserPassword extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String userName = (String) request.getSession().getAttribute("UserName");
-		
-		if (userName == null || userName.equals(""))
-			response.sendRedirect("login");
-		
+
+		String userName = request.getParameter("userName");
+
 		UserService service = new UserService();
 		User user = service.findByUserName(userName);
-		
+
 		request.setAttribute("user", user);
-		request.getRequestDispatcher("changeUserPassword.jsp").forward(request, response);
+		request.getRequestDispatcher("/changeUserPassword.jsp").forward(request, response);
 
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		request.setCharacterEncoding("utf-8");
 		User user = new User();
 		user.setUserName(request.getParameter("userName"));
 		user.setPassword(request.getParameter("password"));
-				
+
+		if (request.getParameter("password").equals("")) {
+			request.setAttribute("user", user);
+			request.setAttribute("errorMessage", "密码不能为空！");
+			request.getRequestDispatcher("/changeUserPassword.jsp").forward(request, response);
+			return;
+		}
+
 		UserService service = new UserService();
-
 		user = service.updateUserPassword(user);
-		
-		request.setAttribute("user", user);
-		request.getRequestDispatcher("/success.jsp").forward(request, response);
 
+		response.sendRedirect("manageUsers");
+//        request.setAttribute("user", user);
+//        request.getRequestDispatcher("/success.jsp").forward(request, response);
 	}
 
 }

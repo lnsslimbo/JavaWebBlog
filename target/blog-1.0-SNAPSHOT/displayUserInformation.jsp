@@ -25,7 +25,7 @@
 <div class="container">
     <%@include file="layout/header.jsp" %>
 
-    <h1>个人信息</h1>
+    <h1>用户信息</h1>
     <table class="table">
         <tbody>
         <tr>

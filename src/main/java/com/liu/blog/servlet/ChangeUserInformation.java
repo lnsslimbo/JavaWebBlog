@@ -46,8 +46,6 @@ public class ChangeUserInformation extends HttpServlet {
 		user = service.updateUser(user);
 
 		response.sendRedirect("manageUsers");
-//        request.setAttribute("user", user);
-//        request.getRequestDispatcher("/success.jsp").forward(request, response);
 
 	}
 

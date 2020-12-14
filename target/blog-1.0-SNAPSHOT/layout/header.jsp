@@ -44,7 +44,7 @@
 					我的
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="displayUser">个人信息</a>
+					<a class="dropdown-item" href="displayMyUser">个人信息</a>
 					<a class="dropdown-item" href="changeMyUserInformation">修改个人信息</a>
 					<a class="dropdown-item" href="changeMyUserPassword">修改个人密码</a>
 				</div>
