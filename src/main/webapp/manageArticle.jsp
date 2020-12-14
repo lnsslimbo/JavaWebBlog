@@ -12,7 +12,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'manageUsers.jsp' starting page</title>
+    <title>管理文章</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">

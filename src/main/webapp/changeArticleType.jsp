@@ -11,7 +11,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>修改文章类型</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">

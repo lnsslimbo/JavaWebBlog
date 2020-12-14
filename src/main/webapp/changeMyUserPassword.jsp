@@ -10,7 +10,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'changeMyUserPassword.jsp' starting page</title>
+    <title>修改我的密码</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">

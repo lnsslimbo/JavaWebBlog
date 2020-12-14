@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
-
+<canvas width="1777" height="841" style="position: fixed; left: 0; top: 0; z-index: 999; pointer-events: none;"></canvas>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<a class="navbar-brand" href="main">博客</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -8,13 +8,15 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
+
 			<li class="nav-item active">
 				<a class="nav-link" href="main">主页 <span class="sr-only">(my)</span></a>
 			</li>
+
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="VisitorDropdown" role="button" data-toggle="dropdown"
 				   aria-haspopup="true" aria-expanded="false">
-					访客
+					浏览
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="manageArticle">所有文章</a>
@@ -22,10 +24,11 @@
 					<a class="dropdown-item" href="searchUser">查询用户</a>
 				</div>
 			</li>
+
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="ArticleDropdown" role="button" data-toggle="dropdown"
 				   aria-haspopup="true" aria-expanded="false">
-					写作
+					创作
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="addArticleType">添加文章类型</a>
@@ -49,6 +52,7 @@
 					<a class="dropdown-item" href="changeMyUserPassword">修改个人密码</a>
 				</div>
 			</li>
+
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="ManagerDropdown" role="button" data-toggle="dropdown"
 				   aria-haspopup="true" aria-expanded="false">
@@ -59,9 +63,11 @@
 					<a class="dropdown-item" href="manageUsers">查看用户</a>
 				</div>
 			</li>
+
 			<li class="nav-item">
 				<a class="nav-link" href="logout">注销</a>
 			</li>
+
 		</ul>
 	</div>
 </nav>

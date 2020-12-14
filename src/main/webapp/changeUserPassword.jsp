@@ -26,7 +26,7 @@
 <div class="container">
     <%@include file="layout/header.jsp" %>
 
-    <h1>修改密码</h1>
+    <h1>修改用户密码</h1>
     <form action="changeUserPassword" method="post">
         <div class="form-group">
             <label for="userName">用户名</label>

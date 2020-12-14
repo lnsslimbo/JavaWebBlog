@@ -9,7 +9,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>My JSP 'displayUserInformation.jsp' starting page</title>
+    <title>显示用户信息</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">

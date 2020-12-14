@@ -36,7 +36,6 @@ public class ManageDisplayArticleServlet extends HttpServlet {
 
             session.setAttribute("email", email);
 
-
             request.setAttribute("article", article);
         }else {
             articleName=request.getParameter("articleName");
