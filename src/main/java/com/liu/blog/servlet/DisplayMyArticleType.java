@@ -14,13 +14,13 @@ import com.liu.blog.entity.ArticleType;
 import com.liu.blog.service.ArticleTypeService;
 
 
-@WebServlet("/displayArticleType")
-public class DisplayArticleType extends HttpServlet {
+@WebServlet("/displayMyArticleType")
+public class DisplayMyArticleType extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String userName = request.getParameter("userName");
+        String userName = (String) request.getSession().getAttribute("UserName");
         ArticleTypeService articleTypeService = new ArticleTypeService();
 
         List<ArticleType> articleTypeList = articleTypeService.findByUserName(userName);

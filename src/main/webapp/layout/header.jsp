@@ -9,7 +9,7 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="main">主页 <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="main">主页 <span class="sr-only">(my)</span></a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="VisitorDropdown" role="button" data-toggle="dropdown"
@@ -29,12 +29,12 @@
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="addArticleType">添加文章类型</a>
-					<a class="dropdown-item" href="displayMytArticleType">查看文章类型</a>
+					<a class="dropdown-item" href="displayMyArticleType">查看文章类型</a>
 					<a class="dropdown-item" href="changeArticleType">修改文章类型</a>
 					<a class="dropdown-item" href="deleteArticleType">删除文章类型</a>
 					<div class="dropdown-divider"></div>
 					<a class="dropdown-item" href="addArticle">添加文章</a>
-					<a class="dropdown-item" href="manageMytArticle">管理文章</a>
+					<a class="dropdown-item" href="manageMyArticle">管理文章</a>
 				</div>
 			</li>
 

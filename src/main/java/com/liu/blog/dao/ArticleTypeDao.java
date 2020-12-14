@@ -13,11 +13,11 @@ import java.util.List;
 public class ArticleTypeDao {
     public static List<ArticleType> findByUserName(String userName) {
         ArrayList<ArticleType> articleTypeList = new ArrayList<>();
-        Connection cn = null;
+
         PreparedStatement st = null;
         ResultSet rs = null;
 
-        cn = DbObject.getConnection();
+        Connection cn = DbObject.getConnection();
         if (cn == null)
             return null;
         try {
@@ -46,12 +46,11 @@ public class ArticleTypeDao {
         return articleTypeList;
     }
 
-    public ArticleType findByArticleTypeName(String userName, String articleTypeName) {
-        Connection cn = null;
+    public ArticleType findByArticleTypeNameAndUserName(String userName, String articleTypeName) {
         PreparedStatement st = null;
         ResultSet rs = null;
 
-        cn = DbObject.getConnection();
+        Connection cn = DbObject.getConnection();
         if (cn == null)
             return null;
         try {
@@ -84,10 +83,9 @@ public class ArticleTypeDao {
     }
 
     public ArticleType addArticleType(ArticleType articleType) {
-        Connection cn;
         PreparedStatement st = null;
 
-        cn = DbObject.getConnection();
+        Connection cn = DbObject.getConnection();
 
         try {
             String sql = "insert into articleTypes(articleTypeName,userName) values(?,?)";
@@ -111,11 +109,10 @@ public class ArticleTypeDao {
     public List<ArticleType> findAll() {
         ArrayList<ArticleType> articleTypeList = new ArrayList<>();
 
-        Connection cn = null;
         PreparedStatement st = null;
         ResultSet rs = null;
 
-        cn = DbObject.getConnection();
+        Connection cn = DbObject.getConnection();
         if (cn == null)
             return null;
 
@@ -140,5 +137,55 @@ public class ArticleTypeDao {
         }
 
         return articleTypeList;
+    }
+
+    public ArticleType updateArticleType(String articleTypeName,ArticleType articleType) {
+        PreparedStatement st = null;
+
+        Connection cn = DbObject.getConnection();
+
+        try {
+            //4.执行sql
+            String sql = "update articleTypes set articleTypeName=? where articleTypeName=? and userName=?";
+            st = cn.prepareStatement(sql);
+
+            st.setString(1, articleType.getArticleTypeName());
+            st.setString(2, articleTypeName);
+            st.setString(3, articleType.getUserName());
+
+            System.out.println(st);
+            int ret = st.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //5.关闭数据库连接
+            DbObject.close(cn, st, null);
+        }
+        return articleType;
+    }
+
+    public void deleteArticleType(String articleTypeName, String userName) {
+        PreparedStatement st = null;
+
+        Connection cn = DbObject.getConnection();
+
+        try {
+            //4.执行sql
+            String sql = "delete from articleTypes where articleTypeName=? and userName=?";
+            st = cn.prepareStatement(sql);
+
+            st.setString(1, articleTypeName);
+            st.setString(2, userName);
+
+            System.out.println(st);
+            int ret = st.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //5.关闭数据库连接
+            DbObject.close(cn, st, null);
+        }
     }
 }

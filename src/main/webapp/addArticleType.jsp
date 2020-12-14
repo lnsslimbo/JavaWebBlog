@@ -21,22 +21,24 @@
 </head>
 
 <body>
-<%@include file="layout/header.jsp" %>
-<h1>添加文章类型</h1>
+<div class="container">
+    <%@include file="layout/header.jsp" %>
+    <h1>添加文章类型</h1>
 
-<form action="addArticleType" method="POST">
-    <div class="form-group">
-        <label for="userName">用户名</label>
-        <input type="text" class="form-control" id="userName" name="userName"
-               value="${userName}" readonly>
-    </div>
-    <div class="form-group">
-        <label for="articleTypeName">文章类型</label>
-        <input type="text" class="form-control" id="articleTypeName" name="articleTypeName">
-    </div>
-    <span style="color:red">${errorMessage}</span><br>
-    <button type="submit" class="btn btn-primary">添加</button>
-</form>
-<%@include file="layout/footer.jsp" %>
+    <form action="addArticleType" method="POST">
+        <div class="form-group">
+            <label for="userName">用户名</label>
+            <input type="text" class="form-control" id="userName" name="userName"
+                   value="${userName}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="articleTypeName">文章类型</label>
+            <input type="text" class="form-control" id="articleTypeName" name="articleTypeName">
+        </div>
+        <span style="color:red">${errorMessage}</span><br>
+        <button type="submit" class="btn btn-primary">添加</button>
+    </form>
+    <%@include file="layout/footer.jsp" %>
+</div>
 </body>
 </html>

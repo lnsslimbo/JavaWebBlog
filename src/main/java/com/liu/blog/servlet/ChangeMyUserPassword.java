@@ -22,7 +22,7 @@ public class ChangeMyUserPassword extends HttpServlet {
         User user = service.findByUserName(userName);
 
         request.setAttribute("user", user);
-        request.getRequestDispatcher("/changeMytUserPassword.jsp").forward(request, response);
+        request.getRequestDispatcher("/changeMyUserPassword.jsp").forward(request, response);
 
     }
 

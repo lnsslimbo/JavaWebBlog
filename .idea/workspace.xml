@@ -9,61 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="增加了删除用户功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/AddUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeMyUserInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeMyUserPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeUserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteArticleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/SearchArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/SearchUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addUser.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/changeMyUserInformation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/changeMyUserPassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/manageArticle.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/manageChangeArticle.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/manageDeleteArticle.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/manageDisplayArticle.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/searchArticle.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/searchUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="aa490c04-4eb3-49f2-a78a-231705b89bf2" name="Default Changelist" comment="完善了article功能以及搜索功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeArticleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteArticleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayMyArticleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageMyArticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/changeArticleType.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/deleteArticleType.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/manageMyArticle.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DeleteUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageDeleteArticleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageDeleteArticleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageModifyArticleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageChangeArticleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ManageUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ModifyUserInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeUserInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ModifyUserPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeUserPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/changeUserInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/changeUserInformation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayArticle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayArticle.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayArticleType.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayArticleType.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/dao/ArticleTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/ArticleTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/service/ArticleTypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/AddArticleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/AddArticleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeMyUserInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeMyUserInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeMyUserPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/ChangeMyUserPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayArticleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayArticleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liu/blog/servlet/DisplayUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addArticle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addArticle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addArticleType.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addArticleType.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayUserInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayUserInformation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/manageUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manageUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/success.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/layout/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/layout/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/manageArticle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manageArticle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/displayUserInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/displayUserInformation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/layout/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/layout/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/manageUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/manageUsers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog-1.0-SNAPSHOT/success.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +232,7 @@
       <workItem from="1607060549883" duration="2928000" />
       <workItem from="1607088058755" duration="31515000" />
       <workItem from="1607425037694" duration="27720000" />
-      <workItem from="1607916479761" duration="2956000" />
+      <workItem from="1607916479761" duration="7321000" />
     </task>
     <task id="LOCAL-00001" summary="添加了用户字段，相应地更改了用户注册部分">
       <created>1606988931155</created>
@@ -398,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607913155931</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="完善了article功能以及搜索功能">
+      <created>1607919621089</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607919621089</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,13 +401,14 @@
     <MESSAGE value="增加了删除用户功能" />
     <MESSAGE value="增加了管理文章界面的操作" />
     <MESSAGE value="新增评论" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增评论" />
+    <MESSAGE value="完善了article功能以及搜索功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善了article功能以及搜索功能" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="359" y="298" key="#SQL_解析范围" timestamp="1607888225436">
+    <state x="359" y="298" key="#SQL_解析范围" timestamp="1607920540277">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="359" y="298" key="#SQL_解析范围/0.0.1440.900@0.0.1440.900" timestamp="1607888225436" />
+    <state x="359" y="298" key="#SQL_解析范围/0.0.1440.900@0.0.1440.900" timestamp="1607920540277" />
     <state x="184" y="109" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607424822539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -456,94 +433,94 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="28" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1607424983571" />
-    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2" timestamp="1607913155656">
+    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2" timestamp="1607919620463">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607913155656" />
+    <state x="724" y="25" width="716" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1607919620463" />
     <state x="288" y="76" key="DiffContextDialog" timestamp="1607917228837">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="288" y="76" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1607917228837" />
-    <state width="1039" height="340" key="GridCell.Tab.0.bottom" timestamp="1607919338498">
+    <state width="1039" height="321" key="GridCell.Tab.0.bottom" timestamp="1607925428036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607919338498" />
+    <state width="1039" height="321" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607925428036" />
     <state width="1039" height="279" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607882242815" />
-    <state width="1039" height="340" key="GridCell.Tab.0.center" timestamp="1607919338495">
+    <state width="1039" height="321" key="GridCell.Tab.0.center" timestamp="1607925428035">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607919338495" />
+    <state width="1039" height="321" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1607925428035" />
     <state width="1039" height="279" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1607882242812" />
-    <state width="1039" height="340" key="GridCell.Tab.0.left" timestamp="1607919338493">
+    <state width="1039" height="321" key="GridCell.Tab.0.left" timestamp="1607925428034">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607919338493" />
+    <state width="1039" height="321" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1607925428034" />
     <state width="1039" height="279" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1607882242811" />
-    <state width="1039" height="340" key="GridCell.Tab.0.right" timestamp="1607919338496">
+    <state width="1039" height="321" key="GridCell.Tab.0.right" timestamp="1607925428036">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607919338496" />
+    <state width="1039" height="321" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1607925428036" />
     <state width="1039" height="279" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1607882242814" />
-    <state width="1039" height="340" key="GridCell.Tab.1.bottom" timestamp="1607919338501">
+    <state width="1039" height="321" key="GridCell.Tab.1.bottom" timestamp="1607925428042">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607919338501" />
+    <state width="1039" height="321" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607925428042" />
     <state width="1039" height="279" key="GridCell.Tab.1.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607882242819" />
-    <state width="1039" height="340" key="GridCell.Tab.1.center" timestamp="1607919338500">
+    <state width="1039" height="321" key="GridCell.Tab.1.center" timestamp="1607925428037">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607919338500" />
+    <state width="1039" height="321" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1607925428037" />
     <state width="1039" height="279" key="GridCell.Tab.1.center/0.25.1440.806@0.25.1440.806" timestamp="1607882242817" />
-    <state width="1039" height="340" key="GridCell.Tab.1.left" timestamp="1607919338499">
+    <state width="1039" height="321" key="GridCell.Tab.1.left" timestamp="1607925428037">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607919338499" />
+    <state width="1039" height="321" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1607925428037" />
     <state width="1039" height="279" key="GridCell.Tab.1.left/0.25.1440.806@0.25.1440.806" timestamp="1607882242816" />
-    <state width="1039" height="340" key="GridCell.Tab.1.right" timestamp="1607919338501">
+    <state width="1039" height="321" key="GridCell.Tab.1.right" timestamp="1607925428038">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607919338501" />
+    <state width="1039" height="321" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1607925428038" />
     <state width="1039" height="279" key="GridCell.Tab.1.right/0.25.1440.806@0.25.1440.806" timestamp="1607882242818" />
-    <state width="1039" height="340" key="GridCell.Tab.2.bottom" timestamp="1607919338503">
+    <state width="1039" height="321" key="GridCell.Tab.2.bottom" timestamp="1607925428045">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607919338503" />
+    <state width="1039" height="321" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1607925428045" />
     <state width="1039" height="279" key="GridCell.Tab.2.bottom/0.25.1440.806@0.25.1440.806" timestamp="1607882242822" />
-    <state width="1039" height="340" key="GridCell.Tab.2.center" timestamp="1607919338502">
+    <state width="1039" height="321" key="GridCell.Tab.2.center" timestamp="1607925428044">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607919338502" />
+    <state width="1039" height="321" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1607925428044" />
     <state width="1039" height="279" key="GridCell.Tab.2.center/0.25.1440.806@0.25.1440.806" timestamp="1607882242820" />
-    <state width="1039" height="340" key="GridCell.Tab.2.left" timestamp="1607919338502">
+    <state width="1039" height="321" key="GridCell.Tab.2.left" timestamp="1607925428043">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607919338502" />
+    <state width="1039" height="321" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1607925428043" />
     <state width="1039" height="279" key="GridCell.Tab.2.left/0.25.1440.806@0.25.1440.806" timestamp="1607882242819" />
-    <state width="1039" height="340" key="GridCell.Tab.2.right" timestamp="1607919338503">
+    <state width="1039" height="321" key="GridCell.Tab.2.right" timestamp="1607925428044">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1039" height="340" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607919338503" />
+    <state width="1039" height="321" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1607925428044" />
     <state width="1039" height="279" key="GridCell.Tab.2.right/0.25.1440.806@0.25.1440.806" timestamp="1607882242821" />
     <state x="536" y="174" key="RollbackChangesDialog" timestamp="1607917296602">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="536" y="174" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1607917296602" />
-    <state width="200" height="441" key="SqlResolveConfigurable" timestamp="1607888224282">
+    <state width="200" height="441" key="SqlResolveConfigurable" timestamp="1607920540177">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="200" height="441" key="SqlResolveConfigurable/0.0.1440.900@0.0.1440.900" timestamp="1607888224282" />
+    <state width="200" height="441" key="SqlResolveConfigurable/0.0.1440.900@0.0.1440.900" timestamp="1607920540177" />
     <state x="450" y="200" width="540" height="524" key="StructurePopup" timestamp="1607880896389">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="450" y="200" width="540" height="524" key="StructurePopup/0.0.1440.900@0.0.1440.900" timestamp="1607880896389" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1607849303529">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1607919628588">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607849303529" />
-    <state x="584" y="174" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607888235235">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1607919628588" />
+    <state x="521" y="174" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607920551612">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="584" y="174" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1607888235235" />
+    <state x="521" y="174" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1607920551612" />
     <state x="499" y="283" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1607872605882">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -556,10 +533,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="202" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1607916091693" />
-    <state x="534" y="282" width="694" height="522" key="find.popup" timestamp="1607919535329">
+    <state x="534" y="282" width="694" height="522" key="find.popup" timestamp="1607925232131">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="534" y="282" width="694" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607919535329" />
+    <state x="534" y="282" width="694" height="522" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607925232131" />
     <state x="547" y="220" key="refactoring.ChangeSignatureDialog" timestamp="1607503562550">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

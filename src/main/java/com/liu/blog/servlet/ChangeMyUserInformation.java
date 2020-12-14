@@ -23,7 +23,7 @@ public class ChangeMyUserInformation extends HttpServlet {
         User user = service.findByUserName(userName);
 
         request.setAttribute("user", user);
-        request.getRequestDispatcher("/changeMytUserInformation.jsp").forward(request, response);
+        request.getRequestDispatcher("/changeMyUserInformation.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)

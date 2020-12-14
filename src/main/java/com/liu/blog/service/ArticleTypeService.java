@@ -18,16 +18,16 @@ public class ArticleTypeService {
     }
 
     public boolean exists(String userName, String articleTypeName) {
-        ArticleType articleType = findByArticleTypeName(userName,articleTypeName);
+        ArticleType articleType = findByArticleTypeNameAndUserName(userName,articleTypeName);
         if (articleType == null)
             return false;
         else
             return true;
     }
 
-    public ArticleType findByArticleTypeName(String userName, String articleTypeName) {
+    public ArticleType findByArticleTypeNameAndUserName(String userName, String articleTypeName) {
         ArticleTypeDao articleTypeDao = new ArticleTypeDao();
-        return articleTypeDao.findByArticleTypeName(userName,articleTypeName);
+        return articleTypeDao.findByArticleTypeNameAndUserName(userName,articleTypeName);
     }
 
     public List<ArticleType> findAll() {
@@ -39,5 +39,15 @@ public class ArticleTypeService {
     public List<ArticleType> findByUserName(String userName) {
         ArticleTypeDao articleTypeDao = new ArticleTypeDao();
         return ArticleTypeDao.findByUserName(userName);
+    }
+
+    public ArticleType updateArticleType(String articleName,ArticleType articleType) {
+        ArticleTypeDao articleTypeDao = new ArticleTypeDao();
+        return articleTypeDao.updateArticleType(articleName,articleType);
+    }
+
+    public void deleteArticleType(String articleTypeName, String userName) {
+        ArticleTypeDao articleTypeDao = new ArticleTypeDao();
+        articleTypeDao.deleteArticleType(articleTypeName,userName);
     }
 }
