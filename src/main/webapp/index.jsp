@@ -20,10 +20,9 @@
 </head>
 
 <body>
-<div class="container">
+<div style="height:100%;background: url(img/o_200403112626wallhaven-3kgjv6.png);background-size: inherit" class="container">
 	<%@include file="layout/header.jsp" %>
-	This is my JSP page. <br>
-	<a href="login">登录</a>
+	<h1>首页</h1>
 	<%@include file="layout/footer.jsp" %>
 </div>
 </body>

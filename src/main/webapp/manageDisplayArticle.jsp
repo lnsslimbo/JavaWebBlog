@@ -11,7 +11,7 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
-<div class="container">
+<div style="height:100%;background: url(img/o_200403112626wallhaven-3kgjv6.png);background-size: inherit" class="container">
     <%@include file="layout/header.jsp" %>
     <%Article article=(Article)request.getAttribute("article");%>
     <h2 class="text-center"><%=article.getArticleName()%></h2>

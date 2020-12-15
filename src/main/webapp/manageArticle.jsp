@@ -25,7 +25,7 @@
 </head>
 
 <body style="background: url(img/wallhaven-73kvkv.jpg);background-size:cover">
-<div class="container">
+<div style="height:100%;background: url(img/o_200403112626wallhaven-3kgjv6.png);background-size: inherit" class="container">
     <%@include file="layout/header.jsp" %>
 
     <h1>最近发表的所有文章</h1>

@@ -7,6 +7,13 @@
     </div>
 </footer>
 
+<style type="text/css">
+    body{min-height:100%;margin:0;padding:0;position:relative;}
+
+    main{padding-bottom:100px;background-color: #bdb76b;}/* main的padding-bottom值要等于或大于footer的height值 */
+    footer{position:absolute;bottom:0;}
+</style>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
