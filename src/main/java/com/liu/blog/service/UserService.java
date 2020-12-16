@@ -11,7 +11,7 @@ public class UserService {
 	}
 
 	//用户登录检查
-	public String loginVerify(String userName, String password) {
+	public String checkLogin(String userName, String password) {
 
 		String errorMessage = "success";
 
@@ -44,11 +44,6 @@ public class UserService {
 			errorMessage = "用户被禁用！";
 			return errorMessage;
 		}
-		//判断用户是否拥有权限
-		/*if(!user.getRole().equals(role){
-			errorMessage = "用户权限不足";
-			return errorMessage;
-		}*/
 			return errorMessage;
 	}
 	//用户注册检查
@@ -97,7 +92,7 @@ public class UserService {
 		UserDao userDao = new UserDao();
 		return userDao.findByUserName(userName);
 	}
-	//通过邮箱查询
+	//通过邮箱查询（未使用）
 	public User findByEmail(String email) {
 		UserDao userDao = new UserDao();
 		return findByEmail(email);
@@ -138,9 +133,9 @@ public class UserService {
 		return newUser;
 	}
 	//删除用户名
-	public User deleteByUserName(User user){
+	public User deleteByUserName(String userName){
 		UserDao dao = new UserDao();
-		return dao.deleteByUserName(user);
+			return dao.deleteByUserName(userName);
 	}
 	//查看所有用户
 	public List<User> findAll() {
@@ -161,12 +156,12 @@ public class UserService {
 		}
 		userDao.changeUserStatus(userName,changedStatus);
 	}
-
+	//检查用户角色
 	public boolean checkRole(String userName) {
 		UserDao userDao = new UserDao();
 		return userDao.checkRole(userName);
 	}
-
+	//通过用户名或个人信息
 	public List<User> findByFullNameOrDescriptionLike(String fullNameOrDescriptionLike) {
 		UserDao userDao = new UserDao();
 		return userDao.findByFullNameOrDescriptionLike(fullNameOrDescriptionLike);

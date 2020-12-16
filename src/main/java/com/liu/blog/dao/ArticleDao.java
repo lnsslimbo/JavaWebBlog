@@ -292,7 +292,7 @@ public class ArticleDao {
 
         return articleList;
     }
-
+    //通过用户名和文章类型查找
     public List<Article> findByUserNameAndArticleTypeName(String userName, String articleTypeName) {
         ArrayList<Article> articleList = new ArrayList<>();
 

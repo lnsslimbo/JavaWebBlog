@@ -16,6 +16,7 @@ public class ChangeMyUserInformation extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        //会话对象取数据
         String userName = (String) request.getSession().getAttribute("UserName");
 
 

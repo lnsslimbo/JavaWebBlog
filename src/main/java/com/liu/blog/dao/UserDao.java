@@ -56,7 +56,7 @@ public class UserDao {
         return user;
     }
     //删除用户
-    public User deleteByUserName(User user){
+    public User deleteByUserName(String userName){
         Connection cn = DbObject.getConnection();;
         PreparedStatement st = null;
 
@@ -67,7 +67,7 @@ public class UserDao {
 
             st = cn.prepareStatement(sql);
 
-            st.setString(1, user.getUserName());
+            st.setString(1,userName);
 
             int ret = st.executeUpdate();
 
@@ -77,7 +77,7 @@ public class UserDao {
             //5.关闭数据库连接
             DbObject.close(cn, st, null);
         }
-        return user;
+        return null;
     }
     //通过用户名查找用户
     public User findByUserName(String userName) {
@@ -264,7 +264,6 @@ public class UserDao {
 
         return userList;
     }
-
     //更改用户状态
     public void changeUserStatus(String userName, String changedStatus) {
         Connection cn = null;
@@ -320,7 +319,7 @@ public class UserDao {
 
         return false;
     }
-
+    //通过用户名或描述信息模糊查询
     public List<User> findByFullNameOrDescriptionLike(String fullNameOrDescriptionLike) {
         ArrayList<User> userList = new ArrayList<>();
 

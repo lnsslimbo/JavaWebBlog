@@ -37,9 +37,6 @@ public class DeleteArticleType extends HttpServlet {
 
         String userName = (String) request.getSession().getAttribute("UserName");
         String articleTypeName = request.getParameter("articleTypeName");
-//        ArticleType articleType = new ArticleType();
-//        articleType.setUserName(userName);
-//        System.out.println(userName);
 
         ArticleTypeService articleTypeService = new ArticleTypeService();
 

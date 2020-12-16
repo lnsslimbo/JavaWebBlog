@@ -40,7 +40,7 @@
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="UserDropdown" role="button" data-toggle="dropdown"
 				   aria-haspopup="true" aria-expanded="false">
-					我的
+					个人
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="displayMyUser">个人信息</a>
@@ -52,7 +52,7 @@
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="ManagerDropdown" role="button" data-toggle="dropdown"
 				   aria-haspopup="true" aria-expanded="false">
-					管理员
+					管理员功能
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="addUser">添加用户</a>
@@ -61,7 +61,7 @@
 			</li>
 
 			<li class="nav-item">
-				<a class="nav-link" href="logout">注销</a>
+				<a class="nav-link" href="logout">登出</a>
 			</li>
 
 		</ul>

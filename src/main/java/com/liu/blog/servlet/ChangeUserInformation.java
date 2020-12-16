@@ -16,7 +16,7 @@ public class ChangeUserInformation extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+	//请求对象取数据
 		String userName = request.getParameter("userName");
 
 		UserService service = new UserService();

@@ -44,11 +44,14 @@
                     <td>${user.fullName}</td>
                     <td>${user.role}</td>
                     <td>${user.status}</td>
+                    <td>${user.userName}</td>
                     <td>
                         <a href="displayUser?userName=${user.userName}">查看信息</a>
                         <a href="changeUserInformation?userName=${user.userName}">修改信息</a>
                         <a href="changeUserPassword?userName=${user.userName}">修改密码</a>
                         <a href="changeUserStatus?userName=${user.userName}">更改状态</a>
+                        <a href="deleteUser?userName=${user.userName}">删除用户</a>
+
                     </td>
                 </tr>
             </c:forEach>

@@ -19,7 +19,7 @@ import com.liu.blog.service.UserService;
 
 
 @WebServlet("/manageChangeArticle")
-public class ManageChangeArticleServlet extends HttpServlet {
+public class ManageChangeArticle extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session=request.getSession();

@@ -27,9 +27,6 @@ public class AddUser extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //1. 接收表单数据
-        //使用编码转换过滤器拦截request请求并转换编码，不在servlet中处理了
-        //request.setCharacterEncoding("utf-8");
 
         //用户的信息至少包括，用户的登录名、密码、用户的姓名、性别、出生日期、手机、Email、微信号、描述信息、注册日期等。
         User user = new User();
@@ -79,9 +76,6 @@ public class AddUser extends HttpServlet {
 
         //3. 新加用户
         user = service.addUser(user);
-
-//        request.setAttribute("user", user);
-//        request.getRequestDispatcher("/success.jsp").forward(request, response);
         response.sendRedirect("manageUsers");
     }
 

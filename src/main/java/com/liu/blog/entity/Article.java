@@ -1,15 +1,15 @@
 package com.liu.blog.entity;
 
 public class Article {
-    private int articleId;
-    private String articleName;
-    private String articleTypeName;
-    private String articleContent;
-    private String userName;
-    private String userEmail;
+    private int articleId;//文章ID
+    private String articleName;//文章名
+    private String articleTypeName;//文章类型名
+    private String articleContent;//文章内容
+    private String userName;//用户名
+    private String userEmail;//用户邮箱
 
-    private String publishDate;
-    private String modDate;
+    private String publishDate;//发表
+    private String modDate;//修改时间
 
     public Article() {
     }

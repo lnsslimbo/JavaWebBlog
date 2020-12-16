@@ -42,26 +42,8 @@ public class RegisterServlet extends HttpServlet {
 		user.setStatus(request.getParameter("status"));
 		System.out.println(user);
 
-
-		/*String userName = request.getParameter("userName");
-		String password = request.getParameter("password");
-		String passwordAgain = request.getParameter("passwordAgain");*/
 		//2. 检查数据
 		UserService userservice = new UserService();
-
-		/*String errorMessage = UserService.registerVerify(userName, password,passwordAgain);
-
-		if (errorMessage.equals("success")) {
-			HttpSession session = request.getSession();
-			session.setAttribute("UserName", userName);
-			response.sendRedirect("main?errorMessage=" + errorMessage);
-		} else {
-			request.setAttribute("userName", userName);
-			request.setAttribute("errorMessage", errorMessage);
-			request.getRequestDispatcher("/login.jsp").forward(request, response);
-		}
-*/
-
 
 		//用户名不为空
 		if (request.getParameter("userName").equals("")){

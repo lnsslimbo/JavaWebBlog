@@ -33,7 +33,8 @@ public class LoginFilter implements Filter {
 				!url.equals("/displayArticleType") && !url.equals("/manageArticleByUser") &&
 				!url.equals("/manageArticleByUserNameAndArticleType") &&
 				!url.equals("/manageReply") &&!url.equals("/manageDisplayArticle")&&
-				!url.equals("/manageChangeArticle")&&!url.equals("/deleteArticle")) {
+				!url.equals("/manageChangeArticle")&&!url.equals("/deleteArticle")&&
+				!url.equals("manageDeleteUser")) {
 			HttpSession session = httpRequest.getSession();
 			String userName = (String) session.getAttribute("UserName");
 			if (userName == null || userName.equals("")) {

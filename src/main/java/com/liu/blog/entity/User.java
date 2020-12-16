@@ -2,14 +2,14 @@ package com.liu.blog.entity;
 
 //用户的信息至少包括，用户的登录名、密码、用户的姓名、性别、出生日期、手机、Email、微信号、描述信息、注册日期等。
 public class User {
-    private String userName;
-    private String password;
-    private String fullName;
-    private String gender;
-    private String birthday;
-    private String phone;
-    private String email;
-    private String weChatId;
+    private String userName;//用户名
+    private String password;//密码
+    private String fullName;//全称
+    private String gender;//年龄
+    private String birthday;//生日
+    private String phone;//联系方式
+    private String email;//邮箱
+    private String weChatId;//微信
     private String description;//描述信息
     private String registrationDate;//注册日期
     private String role;//用户类型 "用户","管理员"

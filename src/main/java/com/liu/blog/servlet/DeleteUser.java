@@ -12,7 +12,7 @@ import com.liu.blog.entity.User;
 import com.liu.blog.service.UserService;
 
 @WebServlet("/deleteUser")
-public class DeleteUserServlet extends HttpServlet {
+public class DeleteUser extends HttpServlet {
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -23,9 +23,12 @@ public class DeleteUserServlet extends HttpServlet {
 
         UserService service = new UserService();
         User user = service.findByUserName(userName);
-        service.deleteByUserName(user);
 
-        request.setAttribute("user", user);
-        response.sendRedirect("UserServlet");
+
+
+        service.deleteByUserName(userName);
+
+        request.setAttribute("userName", userName);
+        response.sendRedirect("manageDeleteUser");
     }
 }

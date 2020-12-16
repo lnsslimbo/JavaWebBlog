@@ -11,7 +11,7 @@ import com.liu.blog.entity.Article;
 import com.liu.blog.service.ArticleService;
 
 @WebServlet( "/manageDeleteArticle")
-public class ManageDeleteArticleServlet extends HttpServlet {
+public class ManageDeleteArticle extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

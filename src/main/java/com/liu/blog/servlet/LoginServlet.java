@@ -1,7 +1,6 @@
 package com.liu.blog.servlet;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.liu.blog.entity.User;
 import com.liu.blog.service.UserService;
 
 @WebServlet("/login")      
@@ -32,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 		//2.检查用户名和密码正确性
 		UserService userService = new UserService();
 
-		String msg = userService.loginVerify(userName, password);
+		String msg = userService.checkLogin(userName, password);
 
 		if (msg.equals("success")) {
 			HttpSession session = request.getSession();

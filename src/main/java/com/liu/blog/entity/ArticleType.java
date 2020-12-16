@@ -1,8 +1,8 @@
 package com.liu.blog.entity;
 
 public class ArticleType {
-    private String articleTypeName;
-    private String userName;
+    private String articleTypeName;//文章类型名
+    private String userName;//用户名
 
     public ArticleType() {
     }

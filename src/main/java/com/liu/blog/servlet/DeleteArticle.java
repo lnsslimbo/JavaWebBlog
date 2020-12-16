@@ -15,7 +15,7 @@ import com.liu.blog.service.UserService;
 
 
 @WebServlet( "/deleteArticle" )
-public class DeleteArticleServlet extends HttpServlet {
+public class DeleteArticle extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session=request.getSession();
